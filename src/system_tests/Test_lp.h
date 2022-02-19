@@ -13,11 +13,18 @@
 
 **/
 
+
+/* 
+NOTE: I have outcommented other tests in order to isolate certificate generation tests.
+*/
+
 #include <cxxtest/TestSuite.h>
 
 #include "Engine.h"
 #include "FloatUtils.h"
 #include "InputQuery.h"
+
+#include <iostream>
 
 class LpTestSuite : public CxxTest::TestSuite
 {
@@ -33,6 +40,7 @@ public:
 
     void test_optimize_for_heuristic_cost()
     {
+        /*
         InputQuery inputQuery;
         inputQuery.setNumberOfVariables( 4 );
 
@@ -105,10 +113,12 @@ public:
 
         TS_ASSERT( FloatUtils::areEqual( engine.computeHeuristicCost
                                          ( heuristicCost ), -1 ) );
+        */
     }
 
     void test_fesiablbe()
     {
+        /*
         InputQuery inputQuery;
         inputQuery.setNumberOfVariables( 4 );
 
@@ -161,11 +171,12 @@ public:
         TS_ASSERT( value2 >= 4 );
         TS_ASSERT( value2 <= 6 );
         TS_ASSERT( value3 >= 0 );
-
+        */
     }
 
     void test_infesiable() 
     {
+        /*
         InputQuery inputQuery;
         inputQuery.setNumberOfVariables( 7 );
         inputQuery.setLowerBound( 0, 0 );
@@ -223,7 +234,50 @@ public:
             result = engine.solve();
             TS_ASSERT( !result );
         }
+        */
     }
+
+    void test_certificate_generation1()
+    {
+
+        //   2  <= x0 <= 5
+        //   -3 <= x1 <= -1
+        //   
+        //  x0 + x1 = 0
+
+
+        InputQuery inputQuery;
+        inputQuery.setNumberOfVariables( 2 );
+
+        inputQuery.setLowerBound( 0, 2 );
+        inputQuery.setUpperBound( 0, 5 );
+
+        inputQuery.setLowerBound( 1, -3 );
+        inputQuery.setUpperBound( 1, -1 );
+
+        Equation equation1;
+        equation1.addAddend( 1, 0 );
+        equation1.addAddend( 1, 1 );
+        equation1.setScalar( 0 );
+        inputQuery.addEquation( equation1 );
+
+        std::cout << "Number of input variables: ";
+        std::cout << inputQuery.getNumInputVariables() << "\n";
+
+        Engine engine;
+
+        // TODO does it make a difference whether preprocess flag
+        // is true or false?
+        // TS_ASSERT_THROWS_NOTHING ( engine.processInputQuery( inputQuery ));
+        TS_ASSERT_THROWS_NOTHING ( engine.processInputQuery( inputQuery, false ));
+        TS_ASSERT_THROWS_NOTHING ( engine.solve() );
+
+        TS_TRACE("Test certificate generation 1 completed.");
+
+    }
+
+
+
 };
 
 //

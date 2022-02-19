@@ -29,6 +29,8 @@
 #include "ReluConstraint.h"
 
 #include <string.h>
+#include <iostream>
+#include <fstream>
 
 class MockForEngine :
     public MockTableauFactory,
@@ -558,6 +560,86 @@ public:
         TS_ASSERT_EQUALS( caseSplits.size(), 2u );
         TS_ASSERT_EQUALS( *caseSplits.begin(), interval1 );
         TS_ASSERT_EQUALS( *( ++caseSplits.begin() ), interval2 );
+    }
+
+    
+    void test_write_to_file()
+    {
+        /*
+        std::ofstream out_file;
+
+        out_file.open("/Users/ademrimpapa/Documents/test_output.txt");
+
+        if (!out_file) {
+            std::cerr << "Error occurred while opening file.\n";
+
+            // TODO maybe fail here?
+            TS_FAIL("Error occurred while opening file.");
+            return;
+        }
+    
+        std::cerr << "File opened sucessfully.\n";
+        
+        out_file << "Hello World\n";
+        out_file << "asdf\n";
+        out_file << "foobar\n";
+
+        out_file.close();
+
+        std::cerr << "File closed.\n";
+        */
+        TS_ASSERT(true);
+    }
+    
+
+    void test_certificate_generation1()
+    {
+        
+        // For now: following test_process_input_query()
+
+        //   3  <= x0 <= 5
+        //   -4 <= x1 <= -2
+        //   
+        //  x0 + x1 = 0
+        //  What does this turn in to? x0 + x1 = x2?
+
+
+        /*
+        std::cout << "cout: Certificate Generation Test" << std::endl;
+        printf("%s\n", "printf: Certificate Generation Test");
+        TS_TRACE("\nCertificate Generation Test 1\n");
+        */
+
+        InputQuery inputQuery;
+        inputQuery.setNumberOfVariables( 2 );
+
+        inputQuery.setLowerBound( 0, 3 );
+        inputQuery.setUpperBound( 0, 5 );
+
+        inputQuery.setLowerBound( 1, -4 );
+        inputQuery.setUpperBound( 1, -2 );
+
+        Equation equation1;
+        equation1.addAddend( 1, 0 );
+        equation1.addAddend( 1, 1 );
+        equation1.setScalar( 0 );
+        inputQuery.addEquation( equation1 );
+
+        Engine engine;
+
+        TS_ASSERT_THROWS_NOTHING( engine.processInputQuery( inputQuery, false ) );
+
+        // TS_TRACE("Basic Variables:\n");
+        // std::cout << tableau->getBasicVariables() << "\n";
+        // tableau->getBasicVariables().print();
+        TS_TRACE("Variables:\n");
+
+        TS_TRACE((tableau->isBasic(0U)) ? "0 basic\n" : "0 non-basic\n");
+        TS_TRACE((tableau->isBasic(1U)) ? "1 basic\n" : "1 non-basic\n");
+        TS_TRACE((tableau->isBasic(2U)) ? "2 basic\n" : "2 non-basic\n");
+        TS_TRACE((tableau->isBasic(3U)) ? "3 basic\n" : "3 non-basic\n");
+
+        TS_ASSERT(true);
     }
 
     void test_todo()

@@ -42,6 +42,8 @@
 
 #include <atomic>
 
+#include <fstream>
+
 #ifdef _WIN32
 #undef ERROR
 #endif
@@ -428,7 +430,8 @@ private:
       Return true only if the current assignment is optimal
       with respect to _heuristicCost.
     */
-    bool performSimplexStep();
+    // bool performSimplexStep();
+    bool performSimplexStep(std::ofstream& out_file);
 
     /*
       Perform a constraint-fixing step: select a violated piece-wise

@@ -34,6 +34,8 @@ public:
 
     void test_infesiable() 
     {
+        // Commented out for now in order to test the feasible example in isolation
+        /*
         const String filename = RESOURCES_DIR  "/mps/lp_infeasible_1.mps";
 
         // Extract an input query from the network
@@ -51,11 +53,17 @@ public:
             bool result = engine.solve();
             TS_ASSERT ( !result );
         }
+        */
     }
 
     void test_fesiable() 
     {
         const char *filename = RESOURCES_DIR "/mps/lp_feasible_1.mps";
+
+
+        // TODO: CAN/SHOULD you turn off preprocessing here?
+        // Is preprocessing responsible for generation of an extra variable?
+        // => seems like it, based on console output
 
         // Extract an input query from the network
         InputQuery inputQuery;

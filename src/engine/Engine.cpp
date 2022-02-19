@@ -33,6 +33,8 @@
 
 #include <random>
 
+#include <fstream>
+
 Engine::Engine()
     : _rowBoundTightener( *_tableau )
     , _smtCore( this )
@@ -165,6 +167,98 @@ bool Engine::solve( unsigned timeoutInSeconds )
 
     applyAllValidConstraintCaseSplits();
 
+    // ----- Certificate Generation -----
+
+    std::ofstream out_file;
+
+    out_file.open("/Users/ademrimpapa/Documents/certificate.txt");
+
+    if (!out_file) {
+        std::cerr << "Error occurred while opening file.\n";
+        // TODO what to do here? (is returning false correct?)
+        return false;
+    }
+
+    std::cerr << "File opened successfully.\n";
+
+    // ----- Certificate Generation -----
+
+    // ----- Certificate Generation -----
+
+    // Printing initial configuration
+
+    // Number of variables
+
+    unsigned n = _tableau->getN();
+    unsigned m = _tableau->getM();
+
+    unsigned num_basic = m;
+    unsigned num_non_basic = (n - m);
+
+    out_file << n << " " << num_basic << " " << num_non_basic << "\n";
+
+    // Set of basic variables
+
+    Set<unsigned> basic_set = _tableau->getBasicVariables();
+
+    for (auto it = basic_set.begin(); it != basic_set.end(); it++) {
+        if (it != basic_set.begin()) {
+            out_file << " ";
+        }
+        out_file << (*it);
+    }
+
+    out_file << "\n";
+
+    // TODO here
+
+    // Matrix
+
+    TableauRow row(num_non_basic);
+
+    for (auto it = basic_set.begin(); it != basic_set.end(); it++) {
+        unsigned basic_var = (*it);
+
+        out_file << basic_var << ":";
+
+        unsigned basic_index = _tableau->variableToIndex(basic_var);
+
+        _tableau->getTableauRow(basic_index, &row);
+
+        // TODO check whether sacalar is zero
+        // probably with FloatUtils:isZero, like in TableauRow::dump
+
+        for (unsigned i = 0; i < num_non_basic; i++) {
+            out_file << " " << row[i];
+        }
+
+        out_file << "\n";
+    }
+
+    // Variable data
+
+    // TODO remove index printing later
+    out_file << std::boolalpha;
+
+    for (unsigned variable = 0; variable < n; variable++) {
+        out_file << variable << " ";
+        /*
+        out_file << _tableau->isBasic(variable) << " ";
+        out_file << _tableau->variableToIndex(variable) << " ";
+        */
+        out_file << _tableau->getLowerBound(variable) << " ";
+        out_file << _tableau->getValue(variable) << " ";
+        out_file << _tableau->getUpperBound(variable) << "\n";
+    }
+
+    // TODO remove
+    _tableau->dump();
+    _tableau->dumpAssignment();
+    _tableau->dumpEquations();
+    // TODO remove
+
+    // ----- Certificate Generation -----
+
     bool splitJustPerformed = true;
     struct timespec mainLoopStart = TimeUtils::sampleMicro();
     while ( true )
@@ -186,6 +280,12 @@ bool Engine::solve( unsigned timeoutInSeconds )
 
             _exitCode = Engine::TIMEOUT;
             _statistics.timeout();
+
+            // ----- Certificate Generation -----
+            out_file.close();
+            std::cerr << "File closed.\n";
+            // ----- Certificate Generation -----
+
             return false;
         }
 
@@ -199,6 +299,12 @@ bool Engine::solve( unsigned timeoutInSeconds )
             }
 
             _exitCode = Engine::QUIT_REQUESTED;
+
+            // ----- Certificate Generation -----
+            out_file.close();
+            std::cerr << "File closed.\n";
+            // ----- Certificate Generation -----
+
             return false;
         }
 
@@ -282,6 +388,13 @@ bool Engine::solve( unsigned timeoutInSeconds )
             if ( !_tableau->allBoundsValid() )
             {
                 // Some variable bounds are invalid, so the query is unsat
+
+                // ----- Certificate Generation -----
+                out_file.close();
+                std::cerr << "File closed.\n";
+                // ----- Certificate Generation -----
+
+
                 throw InfeasibleQueryException();
             }
 
@@ -311,6 +424,18 @@ bool Engine::solve( unsigned timeoutInSeconds )
                         _statistics.print();
                     }
                     _exitCode = Engine::SAT;
+
+
+                    // ----- Certificate Generation -----
+
+                    // Success
+
+                    out_file << "Success\n";
+
+                    out_file.close();
+                    std::cerr << "File closed.\n";
+                    // ----- Certificate Generation -----
+
                     return true;
                 }
 
@@ -331,7 +456,7 @@ bool Engine::solve( unsigned timeoutInSeconds )
             }
 
             // We have out-of-bounds variables.
-            performSimplexStep();
+            performSimplexStep(out_file);
             continue;
         }
         catch ( const MalformedBasisException & )
@@ -360,6 +485,12 @@ bool Engine::solve( unsigned timeoutInSeconds )
             {
                 _exitCode = Engine::ERROR;
                 exportInputQueryWithError( "Cannot restore tableau" );
+
+                // ----- Certificate Generation -----
+                out_file.close();
+                std::cerr << "File closed.\n";
+                // ----- Certificate Generation -----
+
                 return false;
             }
         }
@@ -375,6 +506,12 @@ bool Engine::solve( unsigned timeoutInSeconds )
                     _statistics.print();
                 }
                 _exitCode = Engine::UNSAT;
+
+                // ----- Certificate Generation -----
+                out_file.close();
+                std::cerr << "File closed.\n";
+                // ----- Certificate Generation -----
+
                 return false;
             }
             else
@@ -387,6 +524,12 @@ bool Engine::solve( unsigned timeoutInSeconds )
         {
             _exitCode = Engine::ERROR;
             exportInputQueryWithError( "Unknown error" );
+
+            // ----- Certificate Generation -----
+            out_file.close();
+            std::cerr << "File closed.\n";
+            // ----- Certificate Generation -----
+
             return false;
         }
     }
@@ -436,7 +579,7 @@ void Engine::performConstraintFixingStep()
                                   TimeUtils::timePassed( start, end ) );
 }
 
-bool Engine::performSimplexStep()
+bool Engine::performSimplexStep(std::ofstream& out_file)
 {
     // Statistics
     _statistics.incLongAttribute( Statistics::NUM_SIMPLEX_STEPS );
@@ -628,7 +771,45 @@ bool Engine::performSimplexStep()
 
     // Perform the actual pivot
     _activeEntryStrategy->prePivotHook( _tableau, fakePivot );
+
+    // ----- Certificate Generation -----
+    
+    unsigned leavingVarIndex = _tableau->getLeavingVariableIndex();
+    unsigned enteringVarIndex = _tableau->getEnteringVariableIndex();
+
+    // TODO remove
+    std::cerr << "Pivot variables: " << 
+                leavingVarIndex << " " <<
+                enteringVarIndex << "\n";
+
+    // TODO remove
+
+    /*
+    if (_tableau->basicTooLow(leavingVarIndex)) {
+        out_file << "Pivot1";
+    } else {
+        out_file << "Pivot2";
+    }
+
+    
+
+    out_file << " " << _tableau->basicIndexToVariable(leavingVarIndex);
+    out_file << " " << _tableau->nonBasicIndexToVariable(enteringVarIndex);
+    out_file << "\n";
+    */
     _tableau->performPivot();
+
+
+    // TODO remove
+
+    _tableau->dumpAssignment();
+    _tableau->dumpEquations();
+
+    // TODO remove
+
+
+    // ----- Certificate Generation -----
+
     _activeEntryStrategy->postPivotHook( _tableau, fakePivot );
 
     struct timespec end = TimeUtils::sampleMicro();
@@ -2569,7 +2750,10 @@ void Engine::minimizeHeuristicCost( const Map<unsigned, double>
             continue;
         }
 
-        localOptimaReached = performSimplexStep();
+        // Declare dummy file object to match signature
+        std::ofstream dummy;
+
+        localOptimaReached = performSimplexStep(dummy);
     }
     _tableau->toggleOptimization( false );
     ENGINE_LOG( "Optimizing w.r.t. the current heuristic cost - done\n" );
