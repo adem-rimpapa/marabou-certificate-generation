@@ -754,7 +754,8 @@ void Tableau::performPivot(std::ofstream& out_file)
                       _nonBasicAssignment[_enteringVariable],
                       _lowerBounds[nonBasic], _upperBounds[nonBasic] ).ascii() );
 
-        updateAssignmentForPivot();
+        // updateAssignmentForPivot();
+        updateAssignmentForPivot(out_file);
 
         return;
     }
@@ -792,10 +793,8 @@ void Tableau::performPivot(std::ofstream& out_file)
     if ( !FloatUtils::isZero( pivotEntryByRow - pivotEntryByColumn, GlobalConfiguration::PIVOT_ROW_AND_COLUMN_TOLERANCE ) )
         throw MalformedBasisException();
 
-    // !!! TODO remove probably !!!
-    out_file << "Update \n";
-
-    updateAssignmentForPivot();
+    // updateAssignmentForPivot();
+    updateAssignmentForPivot(out_file);
     updateCostFunctionForPivot();
 
     // Update the database
@@ -2347,7 +2346,8 @@ String Tableau::basicStatusToString( unsigned status )
     return "UNKNOWN";
 }
 
-void Tableau::updateAssignmentForPivot()
+// void Tableau::updateAssignmentForPivot()
+void Tableau::updateAssignmentForPivot(std::ofstream& out_file)
 {
     /*
       This method is invoked when the non-basic _enteringVariable and
@@ -2441,6 +2441,9 @@ void Tableau::updateAssignmentForPivot()
         // we can calculate by how much the entering variable is going
         // to change.
         double nonBasicDelta = basicDelta / -_changeColumn[_leavingVariable];
+
+
+        out_file << "Update\n";
 
         // Update all the other basic variables
         for ( unsigned i = 0; i < _m; ++i )

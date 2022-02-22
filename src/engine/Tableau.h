@@ -644,7 +644,8 @@ private:
       Update the variable assignment to reflect a pivot operation,
       without re-computing it from scratch.
      */
-    void updateAssignmentForPivot();
+    // void updateAssignmentForPivot();
+    void updateAssignmentForPivot(std::ofstream& out_file);
 
     /*
       Ratio tests for determining the leaving variable
