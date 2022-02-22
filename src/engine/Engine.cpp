@@ -210,8 +210,6 @@ bool Engine::solve( unsigned timeoutInSeconds )
 
     out_file << "\n";
 
-    // TODO here
-
     // Matrix
 
     TableauRow row(num_non_basic);
@@ -241,7 +239,7 @@ bool Engine::solve( unsigned timeoutInSeconds )
     out_file << std::boolalpha;
 
     for (unsigned variable = 0; variable < n; variable++) {
-        out_file << variable << " ";
+        out_file << variable << ": ";
         /*
         out_file << _tableau->isBasic(variable) << " ";
         out_file << _tableau->variableToIndex(variable) << " ";
