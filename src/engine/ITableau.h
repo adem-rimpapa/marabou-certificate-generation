@@ -19,6 +19,8 @@
 #include "List.h"
 #include "Set.h"
 
+#include <fstream>
+
 class EntrySelectionStrategy;
 class Equation;
 class ICostFunctionManager;
@@ -127,7 +129,8 @@ public:
     virtual double getChangeRatio() const = 0;
     virtual void setChangeRatio( double changeRatio ) = 0;
     virtual bool performingFakePivot() const = 0;
-    virtual void performPivot() = 0;
+    // virtual void performPivot() = 0;
+    virtual void performPivot(std::ofstream& out_file) = 0;
     virtual double ratioConstraintPerBasic( unsigned basicIndex, double coefficient, bool decrease ) = 0;
     virtual bool isBasic( unsigned variable ) const = 0;
     virtual void setNonBasicAssignment( unsigned variable, double value, bool updateBasics ) = 0;

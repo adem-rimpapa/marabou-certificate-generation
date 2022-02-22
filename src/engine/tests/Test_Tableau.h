@@ -26,6 +26,8 @@
 
 #include <string.h>
 
+#include <fstream>
+
 class MockForTableau
 {
 public:
@@ -495,7 +497,11 @@ public:
 
         // Before the pivot, the variable is at the lower bound
         TS_ASSERT_EQUALS( tableau->getValue( 2u ), 1.0 );
-        TS_ASSERT_THROWS_NOTHING( tableau->performPivot() );
+
+        // Declare dummy file object to match signature
+        std::ofstream dummy;
+
+        TS_ASSERT_THROWS_NOTHING( tableau->performPivot(dummy) );
         // After the pivot, the variable is at the upper bound
         TS_ASSERT_EQUALS( tableau->getValue( 2u ), 10.0 );
 
@@ -571,7 +577,10 @@ public:
 
         TS_ASSERT_THROWS_NOTHING( tableau->computeChangeColumn() );
 
-        TS_ASSERT_THROWS_NOTHING( tableau->performPivot() );
+        // Declare dummy file object to match signature
+        std::ofstream dummy;
+
+        TS_ASSERT_THROWS_NOTHING( tableau->performPivot(dummy) );
 
         TS_ASSERT( tableau->isBasic( 2u ) );
         TS_ASSERT( !tableau->isBasic( 5u ) );
@@ -713,7 +722,10 @@ public:
 
         TS_ASSERT_THROWS_NOTHING( tableau->computePivotRow() );
 
-        TS_ASSERT_THROWS_NOTHING( tableau->performPivot() );
+        // Declare dummy file object to match signature
+        std::ofstream dummy;
+
+        TS_ASSERT_THROWS_NOTHING( tableau->performPivot(dummy) );
         TS_ASSERT( tableau->isBasic( 2u ) );
         TS_ASSERT( !tableau->isBasic( 5u ) );
 
@@ -1047,7 +1059,10 @@ public:
 
         TS_ASSERT_EQUALS( tableau->getValue( 3u ), 1.0 );
 
-        TS_ASSERT_THROWS_NOTHING( tableau->performPivot() );
+        // Declare dummy file object to match signature
+        std::ofstream dummy;
+
+        TS_ASSERT_THROWS_NOTHING( tableau->performPivot(dummy) );
 
         // Check some stuff
 
@@ -1081,7 +1096,7 @@ public:
 
         TS_ASSERT_THROWS_NOTHING( tableau->computePivotRow() );
 
-        TS_ASSERT_THROWS_NOTHING( tableau->performPivot() );
+        TS_ASSERT_THROWS_NOTHING( tableau->performPivot(dummy) );
 
         TS_ASSERT_DIFFERS( tableau->getValue( 2u ), 1.0 );
         TS_ASSERT_DIFFERS( tableau->getValue( 5u ), 112.0 );
@@ -1110,7 +1125,7 @@ public:
 
         TS_ASSERT_THROWS_NOTHING( tableau->computePivotRow() );
 
-        TS_ASSERT_THROWS_NOTHING( tableau->performPivot() );
+        TS_ASSERT_THROWS_NOTHING( tableau->performPivot(dummy) );
 
         TS_ASSERT_DIFFERS( tableau->getValue( 2u ), 1.0 );
         TS_ASSERT_DIFFERS( tableau->getValue( 5u ), 112.0 );
@@ -1169,7 +1184,10 @@ public:
 
         TS_ASSERT_THROWS_NOTHING( tableau->computePivotRow() );
 
-        TS_ASSERT_THROWS_NOTHING( tableau->performPivot() );
+        // Declare dummy file object to match signature
+        std::ofstream dummy;
+
+        TS_ASSERT_THROWS_NOTHING( tableau->performPivot(dummy) );
 
         // Variables x3 and x6 have been pivoted
         TS_ASSERT( tableau->isBasic( 2u ) );

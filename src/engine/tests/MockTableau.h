@@ -24,6 +24,8 @@
 
 #include <cstring>
 
+#include <fstream>
+
 class MockTableau : public ITableau
 {
 public:
@@ -268,7 +270,9 @@ public:
     double getChangeRatio() const { return 0; }
     void setChangeRatio( double /* changeRatio */ ) {}
 
-    void performPivot() {}
+    // void performPivot() {}
+    void performPivot(std::ofstream& out_file) {}
+    
     bool performingFakePivot() const
     {
         return false;

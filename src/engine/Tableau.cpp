@@ -32,6 +32,8 @@
 
 #include <string.h>
 
+#include <fstream>
+
 Tableau::Tableau()
     : _n( 0 )
     , _m( 0 )
@@ -724,7 +726,8 @@ bool Tableau::performingFakePivot() const
     return _leavingVariable == _m;
 }
 
-void Tableau::performPivot()
+// void Tableau::performPivot()
+void Tableau::performPivot(std::ofstream& out_file)
 {
 
     bool decrease;
@@ -788,6 +791,9 @@ void Tableau::performPivot()
     double pivotEntryByRow = _pivotRow->_row[_enteringVariable]._coefficient;
     if ( !FloatUtils::isZero( pivotEntryByRow - pivotEntryByColumn, GlobalConfiguration::PIVOT_ROW_AND_COLUMN_TOLERANCE ) )
         throw MalformedBasisException();
+
+    // !!! TODO remove probably !!!
+    out_file << "Update \n";
 
     updateAssignmentForPivot();
     updateCostFunctionForPivot();

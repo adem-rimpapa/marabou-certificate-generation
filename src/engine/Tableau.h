@@ -27,6 +27,8 @@
 #include "SparseUnsortedList.h"
 #include "Statistics.h"
 
+#include <fstream>
+
 #define TABLEAU_LOG( x, ... ) LOG( GlobalConfiguration::TABLEAU_LOGGING, "Tableau: %s\n", x )
 
 class Equation;
@@ -235,7 +237,8 @@ public:
       Performs the pivot operation after the entering and leaving
       variables have been selected
     */
-    void performPivot();
+    // void performPivot();
+    void performPivot(std::ofstream& out_file);
 
     /*
       Performs a degenerate pivot: just switches the entering and

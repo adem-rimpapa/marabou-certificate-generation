@@ -798,7 +798,7 @@ bool Engine::performSimplexStep(std::ofstream& out_file)
         out_file << " " << _tableau->nonBasicIndexToVariable(enteringVarIndex);
         out_file << "\n";
     }
-    _tableau->performPivot();
+    _tableau->performPivot(out_file);
 
 
     // TODO remove
