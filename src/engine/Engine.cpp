@@ -784,19 +784,20 @@ bool Engine::performSimplexStep(std::ofstream& out_file)
 
     // TODO remove
 
-    /*
-    if (_tableau->basicTooLow(leavingVarIndex)) {
-        out_file << "Pivot1";
+    // TODO is this check correct?
+    if (leavingVarIndex == _tableau->getM()) {
+        out_file << "Warning: performing fake pivot\n";
     } else {
-        out_file << "Pivot2";
+        if (_tableau->basicTooLow(leavingVarIndex)) {
+            out_file << "Pivot1";
+        } else {
+            out_file << "Pivot2";
+        }
+
+        out_file << " " << _tableau->basicIndexToVariable(leavingVarIndex);
+        out_file << " " << _tableau->nonBasicIndexToVariable(enteringVarIndex);
+        out_file << "\n";
     }
-
-    
-
-    out_file << " " << _tableau->basicIndexToVariable(leavingVarIndex);
-    out_file << " " << _tableau->nonBasicIndexToVariable(enteringVarIndex);
-    out_file << "\n";
-    */
     _tableau->performPivot();
 
 

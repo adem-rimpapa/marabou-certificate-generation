@@ -52,7 +52,7 @@ const double GlobalConfiguration::COST_FUNCTION_ERROR_THRESHOLD = 0.0000000001;
 
 const unsigned GlobalConfiguration::SIMULATION_RANDOM_SEED = 1;
 
-const bool GlobalConfiguration::USE_HARRIS_RATIO_TEST = true;
+const bool GlobalConfiguration::USE_HARRIS_RATIO_TEST = false;
 
 const double GlobalConfiguration::SYMBOLIC_TIGHTENING_ROUNDING_CONSTANT = 0.00000005;
 
