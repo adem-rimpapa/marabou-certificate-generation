@@ -2442,8 +2442,15 @@ void Tableau::updateAssignmentForPivot(std::ofstream& out_file)
         // to change.
         double nonBasicDelta = basicDelta / -_changeColumn[_leavingVariable];
 
+        // ----- Certificate Generation -----
 
-        out_file << "Update\n";
+        // TODO is this correct?
+        out_file << "Update";
+        out_file << " " << currentBasic;
+        out_file << " " << basicDelta;
+        out_file << "\n";
+
+        // ----- Certificate Generation -----
 
         // Update all the other basic variables
         for ( unsigned i = 0; i < _m; ++i )
