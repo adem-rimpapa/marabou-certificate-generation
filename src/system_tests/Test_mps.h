@@ -35,7 +35,7 @@ public:
     void test_infesiable() 
     {
         // Commented out for now in order to test the feasible example in isolation
-        /*
+        
         const String filename = RESOURCES_DIR  "/mps/lp_infeasible_1.mps";
 
         // Extract an input query from the network
@@ -44,20 +44,23 @@ public:
         MpsParser mpsParser( filename );
         mpsParser.generateQuery( inputQuery );
         Engine engine;
-        if ( !engine.processInputQuery( inputQuery ) )
+        if ( !engine.processInputQuery( inputQuery, false ) )
         {
             // Got infeasible in preprocess stage
             TS_ASSERT( 1 );
         }
         else {
-            bool result = engine.solve();
+            std::cerr << "test_infesiable: solve function called\n";
+            bool result = engine.solve(10, 
+                                "/Users/ademrimpapa/Documents/certificate_infeasible1.txt");
             TS_ASSERT ( !result );
         }
-        */
+        
     }
 
     void test_fesiable() 
     {
+        /*
         const char *filename = RESOURCES_DIR "/mps/lp_feasible_1.mps";
 
 
@@ -96,6 +99,7 @@ public:
         TS_ASSERT( value1 <= 3 ); 
         TS_ASSERT( value2 >= 4 ); 
         TS_ASSERT( value2 <= 6 ); 
+        */
     }
 };
 
