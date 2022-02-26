@@ -21,6 +21,8 @@
 #include "PiecewiseLinearCaseSplit.h"
 #include "PiecewiseLinearConstraint.h"
 
+#include <string>
+
 class String;
 
 class MockEngine : public IEngine
@@ -111,8 +113,9 @@ public:
 
     unsigned _timeToSolve;
     IEngine::ExitCode _exitCode;
-    bool solve( unsigned timeoutInSeconds )
+    bool solve( unsigned timeoutInSeconds, std::string filename )
     {
+        (void) filename;
         if ( timeoutInSeconds >= _timeToSolve )
             _exitCode = IEngine::TIMEOUT;
         return _exitCode == IEngine::SAT;

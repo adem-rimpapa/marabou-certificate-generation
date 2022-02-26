@@ -145,7 +145,7 @@ void Engine::exportInputQueryWithError( String errorMessage )
 }
 
 
-bool Engine::solve( unsigned timeoutInSeconds )
+bool Engine::solve( unsigned timeoutInSeconds, std::string filename )
 {
 
     SignalHandler::getInstance()->initialize();
@@ -168,6 +168,13 @@ bool Engine::solve( unsigned timeoutInSeconds )
     applyAllValidConstraintCaseSplits();
 
     // ----- Certificate Generation -----
+
+    // -- TODO remove --
+
+    std::cerr << "filename: " << "\"" << filename << "\"" << "\n";
+
+    // -- TODO remove --
+
 
     std::ofstream out_file;
 

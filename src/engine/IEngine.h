@@ -20,6 +20,8 @@
 #include "SnCDivideStrategy.h"
 #include "List.h"
 
+#include <string>
+
 #ifdef _WIN32
 #undef ERROR
 #endif
@@ -83,7 +85,7 @@ public:
     /*
       Solve the encoded query.
     */
-    virtual bool solve( unsigned timeoutInSeconds ) = 0;
+    virtual bool solve( unsigned timeoutInSeconds, std::string filename = "" ) = 0;
 
     /*
       Retrieve the exit code.
