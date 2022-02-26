@@ -72,7 +72,9 @@ public:
         mpsParser.generateQuery( inputQuery );
         Engine engine;
         TS_ASSERT_THROWS_NOTHING ( engine.processInputQuery( inputQuery ) );
-        TS_ASSERT_THROWS_NOTHING ( engine.solve() );
+        // TS_ASSERT_THROWS_NOTHING ( engine.solve() );
+        TS_ASSERT_THROWS_NOTHING ( engine.solve(10, 
+                                    "/Users/ademrimpapa/Documents/certificate_feasible1.txt") );
         engine.extractSolution( inputQuery );
 
         // Sanity test

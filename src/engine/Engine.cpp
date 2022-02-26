@@ -178,15 +178,19 @@ bool Engine::solve( unsigned timeoutInSeconds, std::string filename )
 
     std::ofstream out_file;
 
-    out_file.open("/Users/ademrimpapa/Documents/certificate.txt");
+    if (!filename.empty()) {
+        out_file.open(filename);
+    }
 
     if (!out_file) {
         std::cerr << "Error occurred while opening file.\n";
         // TODO what to do here? (is returning false correct?)
-        return false;
+        // return false;
+    } else {
+        std::cerr << "File opened successfully.\n";
     }
 
-    std::cerr << "File opened successfully.\n";
+    
 
     // ----- Certificate Generation -----
 
