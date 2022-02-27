@@ -234,11 +234,16 @@ bool Engine::solve( unsigned timeoutInSeconds, std::string filename )
 
         _tableau->getTableauRow(basic_index, &row);
 
-        // TODO check whether sacalar is zero
-        // probably with FloatUtils:isZero, like in TableauRow::dump
+        // TODO check whether scalar is zero
+        // probably with FloatUtils::isZero, like in TableauRow::dump
 
         for (unsigned i = 0; i < num_non_basic; i++) {
             out_file << " " << row[i];
+        }
+
+        // Checking for non-zero scalar in equation
+        if (!FloatUtils::isZero(row._scalar)) {
+            out_file << " Warning: scalar in equation is non-zero";
         }
 
         out_file << "\n";
