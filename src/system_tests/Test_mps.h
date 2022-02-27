@@ -60,7 +60,6 @@ public:
 
     void test_fesiable() 
     {
-        /*
         const char *filename = RESOURCES_DIR "/mps/lp_feasible_1.mps";
 
 
@@ -99,7 +98,6 @@ public:
         TS_ASSERT( value1 <= 3 ); 
         TS_ASSERT( value2 >= 4 ); 
         TS_ASSERT( value2 <= 6 ); 
-        */
     }
 };
 

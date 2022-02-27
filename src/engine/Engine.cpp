@@ -517,6 +517,11 @@ bool Engine::solve( unsigned timeoutInSeconds, std::string filename )
                 _exitCode = Engine::UNSAT;
 
                 // ----- Certificate Generation -----
+
+                // Failure
+
+                out_file << "Failure\n";
+
                 out_file.close();
                 std::cerr << "File closed.\n";
                 // ----- Certificate Generation -----
@@ -808,14 +813,6 @@ bool Engine::performSimplexStep(std::ofstream& out_file)
         out_file << "\n";
     }
     _tableau->performPivot(out_file);
-
-
-    // TODO remove
-
-    _tableau->dumpAssignment();
-    _tableau->dumpEquations();
-
-    // TODO remove
 
 
     // ----- Certificate Generation -----
