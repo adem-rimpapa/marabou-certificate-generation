@@ -206,9 +206,11 @@ bool Engine::solve( unsigned timeoutInSeconds, std::string filename )
     unsigned num_basic = m;
     unsigned num_non_basic = (n - m);
 
-    out_file << n << " " << num_basic << " " << num_non_basic << "\n";
+    out_file << "(" << n << " " << num_basic << " " << num_non_basic << ")\n";
 
     // Set of basic variables
+
+    out_file << "(";
 
     Set<unsigned> basic_set = _tableau->getBasicVariables();
 
@@ -219,7 +221,7 @@ bool Engine::solve( unsigned timeoutInSeconds, std::string filename )
         out_file << (*it);
     }
 
-    out_file << "\n";
+    out_file << ")\n";
 
     // Matrix
 
@@ -228,7 +230,7 @@ bool Engine::solve( unsigned timeoutInSeconds, std::string filename )
     for (auto it = basic_set.begin(); it != basic_set.end(); it++) {
         unsigned basic_var = (*it);
 
-        out_file << basic_var << ":";
+        out_file << "(" << basic_var << ":";
 
         unsigned basic_index = _tableau->variableToIndex(basic_var);
 
@@ -238,8 +240,8 @@ bool Engine::solve( unsigned timeoutInSeconds, std::string filename )
         // probably with FloatUtils::isZero, like in TableauRow::dump
 
         for (unsigned i = 0; i < num_non_basic; i++) {
-            out_file << " " << row._row[i]._var;
-            out_file << ": " << row[i];
+            out_file << " (" << row._row[i]._var;
+            out_file << ": " << row[i] << ")";
         }
 
         // Checking for non-zero scalar in equation
@@ -247,7 +249,7 @@ bool Engine::solve( unsigned timeoutInSeconds, std::string filename )
             out_file << " Warning: scalar in equation is non-zero";
         }
 
-        out_file << "\n";
+        out_file << ")\n";
     }
 
     // Variable data
@@ -256,14 +258,14 @@ bool Engine::solve( unsigned timeoutInSeconds, std::string filename )
     out_file << std::boolalpha;
 
     for (unsigned variable = 0; variable < n; variable++) {
-        out_file << variable << ": ";
+        out_file << "(" << variable << ": ";
         /*
         out_file << _tableau->isBasic(variable) << " ";
         out_file << _tableau->variableToIndex(variable) << " ";
         */
         out_file << _tableau->getLowerBound(variable) << " ";
         out_file << _tableau->getValue(variable) << " ";
-        out_file << _tableau->getUpperBound(variable) << "\n";
+        out_file << _tableau->getUpperBound(variable) << ")\n";
     }
 
     // TODO remove
@@ -445,7 +447,7 @@ bool Engine::solve( unsigned timeoutInSeconds, std::string filename )
 
                     // Success
 
-                    out_file << "Success\n";
+                    out_file << "(Success)\n";
 
                     out_file.close();
                     std::cerr << "File closed.\n";
@@ -526,7 +528,7 @@ bool Engine::solve( unsigned timeoutInSeconds, std::string filename )
 
                 // Failure
 
-                out_file << "Failure\n";
+                out_file << "(Failure)\n";
 
                 out_file.close();
                 std::cerr << "File closed.\n";
@@ -809,14 +811,14 @@ bool Engine::performSimplexStep(std::ofstream& out_file)
         out_file << "Warning: performing fake pivot\n";
     } else {
         if (_tableau->basicTooLow(leavingVarIndex)) {
-            out_file << "Pivot1";
+            out_file << "(Pivot1";
         } else {
-            out_file << "Pivot2";
+            out_file << "(Pivot2";
         }
 
         out_file << " " << _tableau->basicIndexToVariable(leavingVarIndex);
         out_file << " " << _tableau->nonBasicIndexToVariable(enteringVarIndex);
-        out_file << "\n";
+        out_file << ")\n";
     }
     _tableau->performPivot(out_file);
 
