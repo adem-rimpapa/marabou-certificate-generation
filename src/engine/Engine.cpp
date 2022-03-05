@@ -238,7 +238,8 @@ bool Engine::solve( unsigned timeoutInSeconds, std::string filename )
         // probably with FloatUtils::isZero, like in TableauRow::dump
 
         for (unsigned i = 0; i < num_non_basic; i++) {
-            out_file << " " << row[i];
+            out_file << " " << row._row[i]._var;
+            out_file << ": " << row[i];
         }
 
         // Checking for non-zero scalar in equation
