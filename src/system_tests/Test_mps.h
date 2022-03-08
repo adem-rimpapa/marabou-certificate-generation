@@ -99,6 +99,25 @@ public:
         TS_ASSERT( value2 >= 4 ); 
         TS_ASSERT( value2 <= 6 ); 
     }
+
+    void test_new_example_1() {
+        const char *filename = RESOURCES_DIR "/mps/new_example_1.mps";
+
+        // Extract an input query
+        InputQuery inputQuery;
+
+        MpsParser mpsParser( filename );
+        mpsParser.generateQuery( inputQuery );
+        Engine engine;
+        TS_ASSERT_THROWS_NOTHING ( engine.processInputQuery( inputQuery ) );
+        TS_ASSERT_THROWS_NOTHING ( engine.solve(10, 
+                                    "/Users/ademrimpapa/Documents/certificate_new_example_1.txt") );
+        engine.extractSolution( inputQuery );
+
+        // TODO maybe sanity check here
+
+    }
+
 };
 
 //
