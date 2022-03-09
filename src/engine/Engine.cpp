@@ -268,11 +268,6 @@ bool Engine::solve( unsigned timeoutInSeconds, std::string filename )
         out_file << _tableau->getUpperBound(variable) << ")\n";
     }
 
-    // TODO remove
-    _tableau->dump();
-    _tableau->dumpAssignment();
-    _tableau->dumpEquations();
-    // TODO remove
 
     // ----- Certificate Generation -----
 
@@ -280,6 +275,12 @@ bool Engine::solve( unsigned timeoutInSeconds, std::string filename )
     struct timespec mainLoopStart = TimeUtils::sampleMicro();
     while ( true )
     {
+        // -- Tableau dump --
+        std::cerr << "Tableau dump:\n";
+        _tableau->dumpEquations();
+        _tableau->dumpAssignment();
+        // -- Tableau dump --
+
         struct timespec mainLoopEnd = TimeUtils::sampleMicro();
         _statistics.incLongAttribute( Statistics::TIME_MAIN_LOOP_MICRO,
                                       TimeUtils::timePassed( mainLoopStart,
