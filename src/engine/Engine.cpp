@@ -276,7 +276,7 @@ bool Engine::solve( unsigned timeoutInSeconds, std::string filename )
     while ( true )
     {
         // -- Tableau dump --
-        std::cerr << "Tableau dump:\n";
+        std::cerr << "\nTableau dump:\n";
         _tableau->dumpEquations();
         _tableau->dumpAssignment();
         // -- Tableau dump --
