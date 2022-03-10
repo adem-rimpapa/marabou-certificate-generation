@@ -281,6 +281,28 @@ bool Engine::solve( unsigned timeoutInSeconds, std::string filename )
         _tableau->dumpAssignment();
         // -- Tableau dump --
 
+        // -- Cost function dump --
+        std::cerr << "\nCost function dump:\n";
+
+        const double *costFun = _tableau->getCostFunction();
+
+        // -- Code copied and adjusted from Tableau::dumpCostFunction() --
+        for ( unsigned i = 0; i < num_non_basic; ++i )
+        {
+            double coefficient = costFun[i];
+            if ( FloatUtils::isZero( coefficient ) )
+                continue;
+
+            if ( FloatUtils::isPositive( coefficient ) )
+                printf( "+" );
+            printf( "%lfx%u ", coefficient, _tableau->nonBasicIndexToVariable( i ) );
+        }
+
+        printf( "\n" );
+        // -- Code copied from Tableau::dumpCostFunction() --
+
+        // -- Cost function dump --
+
         struct timespec mainLoopEnd = TimeUtils::sampleMicro();
         _statistics.incLongAttribute( Statistics::TIME_MAIN_LOOP_MICRO,
                                       TimeUtils::timePassed( mainLoopStart,
