@@ -24,6 +24,8 @@ class MpsTestSuite : public CxxTest::TestSuite
 {
 public:
 
+    bool preprocess = true;
+
     void setUp()
     {
     }
@@ -44,7 +46,7 @@ public:
         MpsParser mpsParser( filename );
         mpsParser.generateQuery( inputQuery );
         Engine engine;
-        if ( !engine.processInputQuery( inputQuery, false ) )
+        if ( !engine.processInputQuery( inputQuery, preprocess ) )
         {
             // Got infeasible in preprocess stage
             TS_ASSERT( 1 );
@@ -73,7 +75,7 @@ public:
         MpsParser mpsParser( filename );
         mpsParser.generateQuery( inputQuery );
         Engine engine;
-        TS_ASSERT_THROWS_NOTHING ( engine.processInputQuery( inputQuery ) );
+        TS_ASSERT_THROWS_NOTHING ( engine.processInputQuery( inputQuery, preprocess ) );
         // TS_ASSERT_THROWS_NOTHING ( engine.solve() );
         TS_ASSERT_THROWS_NOTHING ( engine.solve(10, 
                                     "/Users/ademrimpapa/Documents/certificate_feasible1.txt") );
@@ -109,7 +111,7 @@ public:
         MpsParser mpsParser( filename );
         mpsParser.generateQuery( inputQuery );
         Engine engine;
-        TS_ASSERT_THROWS_NOTHING ( engine.processInputQuery( inputQuery ) );
+        TS_ASSERT_THROWS_NOTHING ( engine.processInputQuery( inputQuery, preprocess ) );
         TS_ASSERT_THROWS_NOTHING ( engine.solve(10, 
                                     "/Users/ademrimpapa/Documents/certificate_new_example_1.txt") );
         engine.extractSolution( inputQuery );
@@ -127,7 +129,7 @@ public:
         MpsParser mpsParser( filename );
         mpsParser.generateQuery( inputQuery );
         Engine engine;
-        TS_ASSERT_THROWS_NOTHING ( engine.processInputQuery( inputQuery ) );
+        TS_ASSERT_THROWS_NOTHING ( engine.processInputQuery( inputQuery, preprocess ) );
         TS_ASSERT_THROWS_NOTHING ( engine.solve(10, 
                                     "/Users/ademrimpapa/Documents/certificate_new_example_2.txt") );
         engine.extractSolution( inputQuery );
