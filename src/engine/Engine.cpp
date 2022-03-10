@@ -286,7 +286,7 @@ bool Engine::solve( unsigned timeoutInSeconds, std::string filename )
 
         const double *costFun = _tableau->getCostFunction();
 
-        // -- Code copied and adjusted from Tableau::dumpCostFunction() --
+        // -- Code copied and adjusted from CostFunctionManager::dumpCostFunction() --
         for ( unsigned i = 0; i < num_non_basic; ++i )
         {
             double coefficient = costFun[i];
