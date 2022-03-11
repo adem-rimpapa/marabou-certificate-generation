@@ -46,7 +46,7 @@ public:
         MpsParser mpsParser( filename );
         mpsParser.generateQuery( inputQuery );
         Engine engine;
-        if ( !engine.processInputQuery( inputQuery, preprocess ) )
+        if ( !engine.processInputQuery( inputQuery, false ) )
         {
             // Got infeasible in preprocess stage
             TS_ASSERT( 1 );
