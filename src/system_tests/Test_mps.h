@@ -139,6 +139,25 @@ public:
     }
 
 
+    void test_testprob() {
+        const char *filename = RESOURCES_DIR "/mps/testprob_modified.mps";
+
+        // Extract an input query
+        InputQuery inputQuery;
+
+        
+        MpsParser mpsParser( filename );
+        mpsParser.generateQuery( inputQuery );
+        Engine engine;
+        TS_ASSERT_THROWS_NOTHING ( engine.processInputQuery( inputQuery, preprocess ) );
+        TS_ASSERT_THROWS_NOTHING ( engine.solve(10, 
+                                    "/Users/ademrimpapa/Documents/certificate_testprob.txt") );
+        engine.extractSolution( inputQuery );
+        
+        // TODO maybe sanity check here
+
+    }
+
 };
 
 //
