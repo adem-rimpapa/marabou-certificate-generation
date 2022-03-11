@@ -71,7 +71,9 @@ Engine::Engine()
     _constraintBoundTightener->setStatistics( &_statistics );
     _preprocessor.setStatistics( &_statistics );
 
-    _activeEntryStrategy = _projectedSteepestEdgeRule;
+    // _activeEntryStrategy = _projectedSteepestEdgeRule;
+    _activeEntryStrategy = &_dantzigsRule;
+    // _activeEntryStrategy = &_blandsRule;
     _activeEntryStrategy->setStatistics( &_statistics );
 
     _statistics.stampStartingTime();
