@@ -158,6 +158,25 @@ public:
 
     }
 
+
+    void test_afiro() {
+        const char *filename = RESOURCES_DIR "/mps/afiro_modified.mps";
+
+        // Extract an input query
+        InputQuery inputQuery;
+
+        
+        MpsParser mpsParser( filename );
+        mpsParser.generateQuery( inputQuery );
+        Engine engine;
+        TS_ASSERT_THROWS_NOTHING ( engine.processInputQuery( inputQuery, preprocess ) );
+        TS_ASSERT_THROWS_NOTHING ( engine.solve(20, 
+                                    "/Users/ademrimpapa/Documents/certificate_afiro.txt") );
+        engine.extractSolution( inputQuery );
+        
+        // TODO maybe sanity check here
+    }
+
 };
 
 //
