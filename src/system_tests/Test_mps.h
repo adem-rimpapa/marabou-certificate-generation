@@ -160,7 +160,8 @@ public:
 
 
     void test_afiro() {
-        const char *filename = RESOURCES_DIR "/mps/afiro_modified.mps";
+        // const char *filename = RESOURCES_DIR "/mps/afiro_modified.mps";
+        const char *filename = RESOURCES_DIR "/mps/afiro_modified2.mps";
 
         // Extract an input query
         InputQuery inputQuery;
