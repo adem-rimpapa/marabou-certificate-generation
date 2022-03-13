@@ -178,6 +178,26 @@ public:
         // TODO maybe sanity check here
     }
 
+
+    void test_dimacs_example() {
+        const char *filename = RESOURCES_DIR "/mps/dimacs_example.mps";
+
+        // Extract an input query
+        InputQuery inputQuery;
+
+        MpsParser mpsParser( filename );
+        mpsParser.generateQuery( inputQuery );
+        Engine engine;
+        TS_ASSERT_THROWS_NOTHING ( engine.processInputQuery( inputQuery, preprocess ) );
+        TS_ASSERT_THROWS_NOTHING ( engine.solve(10, 
+                                    "/Users/ademrimpapa/Documents/certificate_dimacs_example.txt") );
+        engine.extractSolution( inputQuery );
+
+        // TODO maybe sanity check here
+
+    }
+
+
 };
 
 //
