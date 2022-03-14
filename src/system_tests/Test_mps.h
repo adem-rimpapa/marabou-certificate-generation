@@ -197,6 +197,24 @@ public:
 
     }
 
+    void test_gte_bad_20() {
+        const char *filename = RESOURCES_DIR "/mps/gte_bad_20.mps";
+
+        // Extract an input query
+        InputQuery inputQuery;
+
+        MpsParser mpsParser( filename );
+        mpsParser.generateQuery( inputQuery );
+        Engine engine;
+        TS_ASSERT_THROWS_NOTHING ( engine.processInputQuery( inputQuery, preprocess ) );
+        TS_ASSERT_THROWS_NOTHING ( engine.solve(10, 
+                                    "/Users/ademrimpapa/Documents/certificate_gte_bad_20.txt") );
+        engine.extractSolution( inputQuery );
+
+        // TODO maybe sanity check here
+
+    }
+
 
 };
 
