@@ -829,10 +829,11 @@ bool Engine::performSimplexStep(std::ofstream& out_file)
     unsigned enteringVarIndex = _tableau->getEnteringVariableIndex();
 
     // TODO remove
+    /*
     std::cerr << "Pivot variables: " << 
                 leavingVarIndex << " " <<
                 enteringVarIndex << "\n";
-
+    */
     // TODO remove
 
     // TODO is this check correct?
