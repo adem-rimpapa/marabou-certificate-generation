@@ -273,37 +273,41 @@ bool Engine::solve( unsigned timeoutInSeconds, std::string filename )
 
     // ----- Certificate Generation -----
 
+    bool additionalDumps = false;
+
     bool splitJustPerformed = true;
     struct timespec mainLoopStart = TimeUtils::sampleMicro();
     while ( true )
     {
-        // -- Tableau dump --
-        std::cerr << "\nTableau dump:\n";
-        _tableau->dumpEquations();
-        _tableau->dumpAssignment();
-        // -- Tableau dump --
+        if (additionalDumps) {
+            // -- Tableau dump --
+            std::cerr << "\nTableau dump:\n";
+            _tableau->dumpEquations();
+            _tableau->dumpAssignment();
+            // -- Tableau dump --
 
-        // -- Cost function dump --
-        std::cerr << "\nCost function dump:\n";
+            // -- Cost function dump --
+            std::cerr << "\nCost function dump:\n";
 
-        const double *costFun = _tableau->getCostFunction();
+            const double *costFun = _tableau->getCostFunction();
 
-        // -- Code copied and adjusted from CostFunctionManager::dumpCostFunction() --
-        for ( unsigned i = 0; i < num_non_basic; ++i )
-        {
-            double coefficient = costFun[i];
-            if ( FloatUtils::isZero( coefficient ) )
-                continue;
+            // -- Code copied and adjusted from CostFunctionManager::dumpCostFunction() --
+            for ( unsigned i = 0; i < num_non_basic; ++i )
+            {
+                double coefficient = costFun[i];
+                if ( FloatUtils::isZero( coefficient ) )
+                    continue;
 
-            if ( FloatUtils::isPositive( coefficient ) )
-                printf( "+" );
-            printf( "%lfx%u ", coefficient, _tableau->nonBasicIndexToVariable( i ) );
+                if ( FloatUtils::isPositive( coefficient ) )
+                    printf( "+" );
+                printf( "%lfx%u ", coefficient, _tableau->nonBasicIndexToVariable( i ) );
+            }
+
+            printf( "\n" );
+            // -- Code copied from Tableau::dumpCostFunction() --
+
+            // -- Cost function dump --
         }
-
-        printf( "\n" );
-        // -- Code copied from Tableau::dumpCostFunction() --
-
-        // -- Cost function dump --
 
         struct timespec mainLoopEnd = TimeUtils::sampleMicro();
         _statistics.incLongAttribute( Statistics::TIME_MAIN_LOOP_MICRO,
