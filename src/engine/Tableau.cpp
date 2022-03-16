@@ -2446,7 +2446,11 @@ void Tableau::updateAssignmentForPivot(std::ofstream& out_file)
 
         // TODO is this correct?
         if (!FloatUtils::isZero(basicDelta)) {
-            out_file << "(Update";
+            if (basicOutOfBounds(_leavingVariable)) {
+                out_file << "(Update";
+            } else {
+                out_file << "(UpdateInBounds"
+            }
             out_file << " " << currentBasic;
             out_file << " " << basicDelta;
             out_file << ")\n";
