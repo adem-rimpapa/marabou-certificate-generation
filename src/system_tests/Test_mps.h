@@ -20,6 +20,11 @@
 #include "MpsParser.h"
 #include "MString.h"
 
+#include <string>
+#include <iostream>
+#include <experimental/filesystem>
+namespace fs = std::experimental::filesystem;
+
 class MpsTestSuite : public CxxTest::TestSuite
 {
 public:
@@ -212,6 +217,20 @@ public:
         engine.extractSolution( inputQuery );
 
         // TODO maybe sanity check here
+
+    }
+
+
+    void test_gte_dataset() {
+
+        std::string dataset_path = RESOURCES_DIR "/mps/gte_dataset_mps";
+
+        for (const auto& entry : fs::directory_iterator(dataset_path)) {
+            std::string in_file = entry.path().string();
+
+            std::cerr << in_file << "\n";
+
+        }
 
     }
 
