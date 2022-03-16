@@ -845,8 +845,8 @@ bool Engine::performSimplexStep(std::ofstream& out_file)
         } else if (_tableau->basicTooHigh(leavingVarIndex)) {
             out_file << "(Pivot2";
         } else {
-            out_file << "Warning: performing pivot on in-bounds leaving variable\n";
-            out_file << "(Pivot";
+            // out_file << "Warning: performing pivot on in-bounds leaving variable\n";
+            out_file << "(PivotInBounds";
         }
 
         out_file << " " << _tableau->basicIndexToVariable(leavingVarIndex);
