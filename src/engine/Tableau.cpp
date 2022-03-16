@@ -2449,7 +2449,7 @@ void Tableau::updateAssignmentForPivot(std::ofstream& out_file)
             if (basicOutOfBounds(_leavingVariable)) {
                 out_file << "(Update";
             } else {
-                out_file << "(UpdateInBounds"
+                out_file << "(UpdateInBounds";
             }
             out_file << " " << currentBasic;
             out_file << " " << basicDelta;
