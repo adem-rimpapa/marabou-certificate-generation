@@ -2445,10 +2445,12 @@ void Tableau::updateAssignmentForPivot(std::ofstream& out_file)
         // ----- Certificate Generation -----
 
         // TODO is this correct?
-        out_file << "(Update";
-        out_file << " " << currentBasic;
-        out_file << " " << basicDelta;
-        out_file << ")\n";
+        if (!FloatUtils::isZero(basicDelta)) {
+            out_file << "(Update";
+            out_file << " " << currentBasic;
+            out_file << " " << basicDelta;
+            out_file << ")\n";
+        }
 
         // ----- Certificate Generation -----
 
