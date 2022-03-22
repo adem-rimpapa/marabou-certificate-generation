@@ -274,6 +274,11 @@ public:
             std::size_t slash_idx = in_file.find_last_of("/"); 
             std::string filename = in_file.substr(slash_idx + 1);
 
+            std::cerr << filename << "\n";
+            if (filename != "stndrd10_net.mps") {
+                continue;
+            }
+
             std::size_t dot_idx = filename.find_last_of(".");
             std::string out_filename = 
                 "certificate_" + filename.substr(0, dot_idx) + ".txt";
