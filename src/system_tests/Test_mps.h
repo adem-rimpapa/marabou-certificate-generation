@@ -274,7 +274,7 @@ public:
             std::size_t slash_idx = in_file.find_last_of("/"); 
             std::string filename = in_file.substr(slash_idx + 1);
 
-            std::cerr << filename << "\n";
+            // std::cerr << filename << "\n";
             if (filename != "stndrd10_net.mps") {
                 continue;
             }
