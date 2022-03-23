@@ -224,7 +224,7 @@ public:
     void test_gte_dataset() {
 
         std::string dataset_path = RESOURCES_DIR "/mps/gte_dataset_mps";
-        std::string out_path = "/Users/ademrimpapa/Documents/certificates_gte_dataset/";
+        std::string out_path = "/Users/ademrimpapa/Documents/MarabouCertificates/certificates_gte_dataset/";
 
         for (const auto& entry : fs::directory_iterator(dataset_path)) {
             std::string in_file = entry.path().string();
@@ -262,7 +262,7 @@ public:
     void test_netgen_dataset() {
 
         std::string dataset_path = RESOURCES_DIR "/mps/netgen_dataset_mps";
-        std::string out_path = "/Users/ademrimpapa/Documents/certificates_netgen_dataset/";
+        std::string out_path = "/Users/ademrimpapa/Documents/MarabouCertificates/certificates_netgen_dataset/";
 
         for (const auto& entry : fs::directory_iterator(dataset_path)) {
             std::string in_file = entry.path().string();
