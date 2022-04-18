@@ -339,6 +339,42 @@ public:
 
     }
 
+    void test_gte_mod2_dataset() {
+
+        std::string dataset_path = RESOURCES_DIR "/mps/gte_mod2_dataset_mps";
+        std::string out_path = "/Users/ademrimpapa/Documents/MarabouCertificates/certificates_gte_mod2_dataset/";
+
+        for (const auto& entry : fs::directory_iterator(dataset_path)) {
+            std::string in_file = entry.path().string();
+
+            // std::cerr << in_file << "\n";
+
+            // Generate output file path from input path
+
+            std::size_t slash_idx = in_file.find_last_of("/"); 
+            std::string filename = in_file.substr(slash_idx + 1);
+
+            std::size_t dot_idx = filename.find_last_of(".");
+            std::string out_filename = 
+                "certificate_" + filename.substr(0, dot_idx) + ".txt";
+
+            std::string out_file = out_path + out_filename;
+
+            // Generate the certificate
+
+            // Extract an input query
+            InputQuery inputQuery;
+
+            MpsParser mpsParser( in_file );
+            mpsParser.generateQuery( inputQuery );
+            Engine engine;
+            TS_ASSERT_THROWS_NOTHING ( engine.processInputQuery( inputQuery, preprocess ) );
+            TS_ASSERT_THROWS_NOTHING ( engine.solve(10, out_file) );
+            engine.extractSolution( inputQuery );
+
+        }
+
+    }
 
 };
 
