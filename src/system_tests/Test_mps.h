@@ -59,7 +59,7 @@ public:
         else {
             std::cerr << "test_infesiable: solve function called\n";
             bool result = engine.solve(10, 
-                                "/Users/ademrimpapa/Documents/certificate_infeasible1.txt");
+                                "/Users/ademrimpapa/Documents/MarabouCertificates/certificate_infeasible1.txt");
             TS_ASSERT ( !result );
         }
         
@@ -83,7 +83,7 @@ public:
         TS_ASSERT_THROWS_NOTHING ( engine.processInputQuery( inputQuery, preprocess ) );
         // TS_ASSERT_THROWS_NOTHING ( engine.solve() );
         TS_ASSERT_THROWS_NOTHING ( engine.solve(10, 
-                                    "/Users/ademrimpapa/Documents/certificate_feasible1.txt") );
+                                    "/Users/ademrimpapa/Documents/MarabouCertificates/certificate_feasible1.txt") );
         engine.extractSolution( inputQuery );
 
         // Sanity test
@@ -118,7 +118,7 @@ public:
         Engine engine;
         TS_ASSERT_THROWS_NOTHING ( engine.processInputQuery( inputQuery, preprocess ) );
         TS_ASSERT_THROWS_NOTHING ( engine.solve(10, 
-                                    "/Users/ademrimpapa/Documents/certificate_new_example_1.txt") );
+                                    "/Users/ademrimpapa/Documents/MarabouCertificates/certificate_new_example_1.txt") );
         engine.extractSolution( inputQuery );
 
         // TODO maybe sanity check here
@@ -136,7 +136,7 @@ public:
         Engine engine;
         TS_ASSERT_THROWS_NOTHING ( engine.processInputQuery( inputQuery, preprocess ) );
         TS_ASSERT_THROWS_NOTHING ( engine.solve(10, 
-                                    "/Users/ademrimpapa/Documents/certificate_new_example_2.txt") );
+                                    "/Users/ademrimpapa/Documents/MarabouCertificates/certificate_new_example_2.txt") );
         engine.extractSolution( inputQuery );
 
         // TODO maybe sanity check here
@@ -156,7 +156,7 @@ public:
         Engine engine;
         TS_ASSERT_THROWS_NOTHING ( engine.processInputQuery( inputQuery, preprocess ) );
         TS_ASSERT_THROWS_NOTHING ( engine.solve(10, 
-                                    "/Users/ademrimpapa/Documents/certificate_testprob.txt") );
+                                    "/Users/ademrimpapa/Documents/MarabouCertificates/certificate_testprob.txt") );
         engine.extractSolution( inputQuery );
         
         // TODO maybe sanity check here
@@ -177,7 +177,7 @@ public:
         Engine engine;
         TS_ASSERT_THROWS_NOTHING ( engine.processInputQuery( inputQuery, preprocess ) );
         TS_ASSERT_THROWS_NOTHING ( engine.solve(20, 
-                                    "/Users/ademrimpapa/Documents/certificate_afiro.txt") );
+                                    "/Users/ademrimpapa/Documents/MarabouCertificates/certificate_afiro.txt") );
         engine.extractSolution( inputQuery );
         
         // TODO maybe sanity check here
@@ -195,7 +195,7 @@ public:
         Engine engine;
         TS_ASSERT_THROWS_NOTHING ( engine.processInputQuery( inputQuery, preprocess ) );
         TS_ASSERT_THROWS_NOTHING ( engine.solve(10, 
-                                    "/Users/ademrimpapa/Documents/certificate_dimacs_example.txt") );
+                                    "/Users/ademrimpapa/Documents/MarabouCertificates/certificate_dimacs_example.txt") );
         engine.extractSolution( inputQuery );
 
         // TODO maybe sanity check here
