@@ -1117,1043 +1117,1043 @@ RHS
     rhs       e49                 0
 BOUNDS
  LO bnd       x0                  0
- UP bnd       x0                 10
+ UP bnd       x0             269043
  LO bnd       x1                  0
- UP bnd       x1                 10
+ UP bnd       x1               1000
  LO bnd       x2                  0
- UP bnd       x2                 10
+ UP bnd       x2               1000
  LO bnd       x3                  0
- UP bnd       x3                 10
+ UP bnd       x3               1000
  LO bnd       x4                  0
- UP bnd       x4                 10
+ UP bnd       x4               1000
  LO bnd       x5                  0
- UP bnd       x5                 10
+ UP bnd       x5               1000
  LO bnd       x6                  0
- UP bnd       x6                 10
+ UP bnd       x6             269043
  LO bnd       x7                  0
- UP bnd       x7                 10
+ UP bnd       x7               1000
  LO bnd       x8                  0
- UP bnd       x8                 10
+ UP bnd       x8               1000
  LO bnd       x9                  0
- UP bnd       x9                 10
+ UP bnd       x9               1000
  LO bnd       x10                 0
- UP bnd       x10                10
+ UP bnd       x10              1000
  LO bnd       x11                 0
- UP bnd       x11                10
+ UP bnd       x11              1000
  LO bnd       x12                 0
- UP bnd       x12                10
+ UP bnd       x12            269043
  LO bnd       x13                 0
- UP bnd       x13                10
+ UP bnd       x13              1000
  LO bnd       x14                 0
- UP bnd       x14                10
+ UP bnd       x14              1000
  LO bnd       x15                 0
- UP bnd       x15                10
+ UP bnd       x15              1000
  LO bnd       x16                 0
- UP bnd       x16                10
+ UP bnd       x16              1000
  LO bnd       x17                 0
- UP bnd       x17                10
+ UP bnd       x17              1000
  LO bnd       x18                 0
- UP bnd       x18                10
+ UP bnd       x18              1000
  LO bnd       x19                 0
- UP bnd       x19                10
+ UP bnd       x19            269043
  LO bnd       x20                 0
- UP bnd       x20                10
+ UP bnd       x20              1000
  LO bnd       x21                 0
- UP bnd       x21                10
+ UP bnd       x21              1000
  LO bnd       x22                 0
- UP bnd       x22                10
+ UP bnd       x22              1000
  LO bnd       x23                 0
- UP bnd       x23                10
+ UP bnd       x23              1000
  LO bnd       x24                 0
- UP bnd       x24                10
+ UP bnd       x24            269043
  LO bnd       x25                 0
- UP bnd       x25                10
+ UP bnd       x25            269043
  LO bnd       x26                 0
- UP bnd       x26                10
+ UP bnd       x26            269043
  LO bnd       x27                 0
- UP bnd       x27                10
+ UP bnd       x27            269043
  LO bnd       x28                 0
- UP bnd       x28                10
+ UP bnd       x28            269043
  LO bnd       x29                 0
- UP bnd       x29                10
+ UP bnd       x29              1000
  LO bnd       x30                 0
- UP bnd       x30                10
+ UP bnd       x30              1000
  LO bnd       x31                 0
- UP bnd       x31                10
+ UP bnd       x31            269043
  LO bnd       x32                 0
- UP bnd       x32                10
+ UP bnd       x32            269043
  LO bnd       x33                 0
- UP bnd       x33                10
+ UP bnd       x33              1000
  LO bnd       x34                 0
- UP bnd       x34                10
+ UP bnd       x34              1000
  LO bnd       x35                 0
- UP bnd       x35                10
+ UP bnd       x35            269043
  LO bnd       x36                 0
- UP bnd       x36                10
+ UP bnd       x36            269043
  LO bnd       x37                 0
- UP bnd       x37                10
+ UP bnd       x37            269043
  LO bnd       x38                 0
- UP bnd       x38                10
+ UP bnd       x38            269043
  LO bnd       x39                 0
- UP bnd       x39                10
+ UP bnd       x39              1000
  LO bnd       x40                 0
- UP bnd       x40                10
+ UP bnd       x40              1000
  LO bnd       x41                 0
- UP bnd       x41                10
+ UP bnd       x41              1000
  LO bnd       x42                 0
- UP bnd       x42                10
+ UP bnd       x42              1000
  LO bnd       x43                 0
- UP bnd       x43                10
+ UP bnd       x43              1000
  LO bnd       x44                 0
- UP bnd       x44                10
+ UP bnd       x44            269043
  LO bnd       x45                 0
- UP bnd       x45                10
+ UP bnd       x45              1000
  LO bnd       x46                 0
- UP bnd       x46                10
+ UP bnd       x46              1000
  LO bnd       x47                 0
- UP bnd       x47                10
+ UP bnd       x47              1000
  LO bnd       x48                 0
- UP bnd       x48                10
+ UP bnd       x48              1000
  LO bnd       x49                 0
- UP bnd       x49                10
+ UP bnd       x49              1000
  LO bnd       x50                 0
- UP bnd       x50                10
+ UP bnd       x50              1000
  LO bnd       x51                 0
- UP bnd       x51                10
+ UP bnd       x51              1000
  LO bnd       x52                 0
- UP bnd       x52                10
+ UP bnd       x52            269043
  LO bnd       x53                 0
- UP bnd       x53                10
+ UP bnd       x53              1000
  LO bnd       x54                 0
- UP bnd       x54                10
+ UP bnd       x54              1000
  LO bnd       x55                 0
- UP bnd       x55                10
+ UP bnd       x55              1000
  LO bnd       x56                 0
- UP bnd       x56                10
+ UP bnd       x56              1000
  LO bnd       x57                 0
- UP bnd       x57                10
+ UP bnd       x57              1000
  LO bnd       x58                 0
- UP bnd       x58                10
+ UP bnd       x58              1000
  LO bnd       x59                 0
- UP bnd       x59                10
+ UP bnd       x59            269043
  LO bnd       x60                 0
- UP bnd       x60                10
+ UP bnd       x60              1000
  LO bnd       x61                 0
- UP bnd       x61                10
+ UP bnd       x61              1000
  LO bnd       x62                 0
- UP bnd       x62                10
+ UP bnd       x62              1000
  LO bnd       x63                 0
- UP bnd       x63                10
+ UP bnd       x63              1000
  LO bnd       x64                 0
- UP bnd       x64                10
+ UP bnd       x64            269043
  LO bnd       x65                 0
- UP bnd       x65                10
+ UP bnd       x65            269043
  LO bnd       x66                 0
- UP bnd       x66                10
+ UP bnd       x66            269043
  LO bnd       x67                 0
- UP bnd       x67                10
+ UP bnd       x67            269043
  LO bnd       x68                 0
- UP bnd       x68                10
+ UP bnd       x68              1000
  LO bnd       x69                 0
- UP bnd       x69                10
+ UP bnd       x69            269043
  LO bnd       x70                 0
- UP bnd       x70                10
+ UP bnd       x70              1000
  LO bnd       x71                 0
- UP bnd       x71                10
+ UP bnd       x71              1000
  LO bnd       x72                 0
- UP bnd       x72                10
+ UP bnd       x72            269043
  LO bnd       x73                 0
- UP bnd       x73                10
+ UP bnd       x73              1000
  LO bnd       x74                 0
- UP bnd       x74                10
+ UP bnd       x74              1000
  LO bnd       x75                 0
- UP bnd       x75                10
+ UP bnd       x75              1000
  LO bnd       x76                 0
- UP bnd       x76                10
+ UP bnd       x76            269043
  LO bnd       x77                 0
- UP bnd       x77                10
+ UP bnd       x77            269043
  LO bnd       x78                 0
- UP bnd       x78                10
+ UP bnd       x78              1000
  LO bnd       x79                 0
- UP bnd       x79                10
+ UP bnd       x79            269043
  LO bnd       x80                 0
- UP bnd       x80                10
+ UP bnd       x80            269043
  LO bnd       x81                 0
- UP bnd       x81                10
+ UP bnd       x81            269043
  LO bnd       x82                 0
- UP bnd       x82                10
+ UP bnd       x82              1000
  LO bnd       x83                 0
- UP bnd       x83                10
+ UP bnd       x83            269043
  LO bnd       x84                 0
- UP bnd       x84                10
+ UP bnd       x84              1000
  LO bnd       x85                 0
- UP bnd       x85                10
+ UP bnd       x85            269043
  LO bnd       x86                 0
- UP bnd       x86                10
+ UP bnd       x86              1000
  LO bnd       x87                 0
- UP bnd       x87                10
+ UP bnd       x87              1000
  LO bnd       x88                 0
- UP bnd       x88                10
+ UP bnd       x88            269043
  LO bnd       x89                 0
- UP bnd       x89                10
+ UP bnd       x89              1000
  LO bnd       x90                 0
- UP bnd       x90                10
+ UP bnd       x90            269043
  LO bnd       x91                 0
- UP bnd       x91                10
+ UP bnd       x91            269043
  LO bnd       x92                 0
- UP bnd       x92                10
+ UP bnd       x92            269043
  LO bnd       x93                 0
- UP bnd       x93                10
+ UP bnd       x93              1000
  LO bnd       x94                 0
- UP bnd       x94                10
+ UP bnd       x94              1000
  LO bnd       x95                 0
- UP bnd       x95                10
+ UP bnd       x95              1000
  LO bnd       x96                 0
- UP bnd       x96                10
+ UP bnd       x96              1000
  LO bnd       x97                 0
- UP bnd       x97                10
+ UP bnd       x97            269043
  LO bnd       x98                 0
- UP bnd       x98                10
+ UP bnd       x98              1000
  LO bnd       x99                 0
- UP bnd       x99                10
+ UP bnd       x99              1000
  LO bnd       x100                0
- UP bnd       x100               10
+ UP bnd       x100             1000
  LO bnd       x101                0
- UP bnd       x101               10
+ UP bnd       x101             1000
  LO bnd       x102                0
- UP bnd       x102               10
+ UP bnd       x102             1000
  LO bnd       x103                0
- UP bnd       x103               10
+ UP bnd       x103           269043
  LO bnd       x104                0
- UP bnd       x104               10
+ UP bnd       x104             1000
  LO bnd       x105                0
- UP bnd       x105               10
+ UP bnd       x105             1000
  LO bnd       x106                0
- UP bnd       x106               10
+ UP bnd       x106             1000
  LO bnd       x107                0
- UP bnd       x107               10
+ UP bnd       x107             1000
  LO bnd       x108                0
- UP bnd       x108               10
+ UP bnd       x108           269043
  LO bnd       x109                0
- UP bnd       x109               10
+ UP bnd       x109             1000
  LO bnd       x110                0
- UP bnd       x110               10
+ UP bnd       x110             1000
  LO bnd       x111                0
- UP bnd       x111               10
+ UP bnd       x111             1000
  LO bnd       x112                0
- UP bnd       x112               10
+ UP bnd       x112             1000
  LO bnd       x113                0
- UP bnd       x113               10
+ UP bnd       x113           269043
  LO bnd       x114                0
- UP bnd       x114               10
+ UP bnd       x114           269043
  LO bnd       x115                0
- UP bnd       x115               10
+ UP bnd       x115           269043
  LO bnd       x116                0
- UP bnd       x116               10
+ UP bnd       x116           269043
  LO bnd       x117                0
- UP bnd       x117               10
+ UP bnd       x117             1000
  LO bnd       x118                0
- UP bnd       x118               10
+ UP bnd       x118             1000
  LO bnd       x119                0
- UP bnd       x119               10
+ UP bnd       x119             1000
  LO bnd       x120                0
- UP bnd       x120               10
+ UP bnd       x120           269043
  LO bnd       x121                0
- UP bnd       x121               10
+ UP bnd       x121             1000
  LO bnd       x122                0
- UP bnd       x122               10
+ UP bnd       x122             1000
  LO bnd       x123                0
- UP bnd       x123               10
+ UP bnd       x123             1000
  LO bnd       x124                0
- UP bnd       x124               10
+ UP bnd       x124             1000
  LO bnd       x125                0
- UP bnd       x125               10
+ UP bnd       x125           269043
  LO bnd       x126                0
- UP bnd       x126               10
+ UP bnd       x126             1000
  LO bnd       x127                0
- UP bnd       x127               10
+ UP bnd       x127           269043
  LO bnd       x128                0
- UP bnd       x128               10
+ UP bnd       x128           269043
  LO bnd       x129                0
- UP bnd       x129               10
+ UP bnd       x129           269043
  LO bnd       x130                0
- UP bnd       x130               10
+ UP bnd       x130           269043
  LO bnd       x131                0
- UP bnd       x131               10
+ UP bnd       x131           269043
  LO bnd       x132                0
- UP bnd       x132               10
+ UP bnd       x132             1000
  LO bnd       x133                0
- UP bnd       x133               10
+ UP bnd       x133             1000
  LO bnd       x134                0
- UP bnd       x134               10
+ UP bnd       x134             1000
  LO bnd       x135                0
- UP bnd       x135               10
+ UP bnd       x135             1000
  LO bnd       x136                0
- UP bnd       x136               10
+ UP bnd       x136             1000
  LO bnd       x137                0
- UP bnd       x137               10
+ UP bnd       x137             1000
  LO bnd       x138                0
- UP bnd       x138               10
+ UP bnd       x138             1000
  LO bnd       x139                0
- UP bnd       x139               10
+ UP bnd       x139             1000
  LO bnd       x140                0
- UP bnd       x140               10
+ UP bnd       x140           269043
  LO bnd       x141                0
- UP bnd       x141               10
+ UP bnd       x141             1000
  LO bnd       x142                0
- UP bnd       x142               10
+ UP bnd       x142             1000
  LO bnd       x143                0
- UP bnd       x143               10
+ UP bnd       x143             1000
  LO bnd       x144                0
- UP bnd       x144               10
+ UP bnd       x144             1000
  LO bnd       x145                0
- UP bnd       x145               10
+ UP bnd       x145             1000
  LO bnd       x146                0
- UP bnd       x146               10
+ UP bnd       x146             1000
  LO bnd       x147                0
- UP bnd       x147               10
+ UP bnd       x147             1000
  LO bnd       x148                0
- UP bnd       x148               10
+ UP bnd       x148             1000
  LO bnd       x149                0
- UP bnd       x149               10
+ UP bnd       x149           269043
  LO bnd       x150                0
- UP bnd       x150               10
+ UP bnd       x150             1000
  LO bnd       x151                0
- UP bnd       x151               10
+ UP bnd       x151             1000
  LO bnd       x152                0
- UP bnd       x152               10
+ UP bnd       x152             1000
  LO bnd       x153                0
- UP bnd       x153               10
+ UP bnd       x153             1000
  LO bnd       x154                0
- UP bnd       x154               10
+ UP bnd       x154             1000
  LO bnd       x155                0
- UP bnd       x155               10
+ UP bnd       x155             1000
  LO bnd       x156                0
- UP bnd       x156               10
+ UP bnd       x156             1000
  LO bnd       x157                0
- UP bnd       x157               10
+ UP bnd       x157             1000
  LO bnd       x158                0
- UP bnd       x158               10
+ UP bnd       x158           269043
  LO bnd       x159                0
- UP bnd       x159               10
+ UP bnd       x159             1000
  LO bnd       x160                0
- UP bnd       x160               10
+ UP bnd       x160             1000
  LO bnd       x161                0
- UP bnd       x161               10
+ UP bnd       x161             1000
  LO bnd       x162                0
- UP bnd       x162               10
+ UP bnd       x162             1000
  LO bnd       x163                0
- UP bnd       x163               10
+ UP bnd       x163             1000
  LO bnd       x164                0
- UP bnd       x164               10
+ UP bnd       x164             1000
  LO bnd       x165                0
- UP bnd       x165               10
+ UP bnd       x165             1000
  LO bnd       x166                0
- UP bnd       x166               10
+ UP bnd       x166           269043
  LO bnd       x167                0
- UP bnd       x167               10
+ UP bnd       x167             1000
  LO bnd       x168                0
- UP bnd       x168               10
+ UP bnd       x168             1000
  LO bnd       x169                0
- UP bnd       x169               10
+ UP bnd       x169             1000
  LO bnd       x170                0
- UP bnd       x170               10
+ UP bnd       x170             1000
  LO bnd       x171                0
- UP bnd       x171               10
+ UP bnd       x171             1000
  LO bnd       x172                0
- UP bnd       x172               10
+ UP bnd       x172             1000
  LO bnd       x173                0
- UP bnd       x173               10
+ UP bnd       x173             1000
  LO bnd       x174                0
- UP bnd       x174               10
+ UP bnd       x174             1000
  LO bnd       x175                0
- UP bnd       x175               10
+ UP bnd       x175           269043
  LO bnd       x176                0
- UP bnd       x176               10
+ UP bnd       x176             1000
  LO bnd       x177                0
- UP bnd       x177               10
+ UP bnd       x177             1000
  LO bnd       x178                0
- UP bnd       x178               10
+ UP bnd       x178             1000
  LO bnd       x179                0
- UP bnd       x179               10
+ UP bnd       x179             1000
  LO bnd       x180                0
- UP bnd       x180               10
+ UP bnd       x180             1000
  LO bnd       x181                0
- UP bnd       x181               10
+ UP bnd       x181             1000
  LO bnd       x182                0
- UP bnd       x182               10
+ UP bnd       x182             1000
  LO bnd       x183                0
- UP bnd       x183               10
+ UP bnd       x183           269043
  LO bnd       x184                0
- UP bnd       x184               10
+ UP bnd       x184           269043
  LO bnd       x185                0
- UP bnd       x185               10
+ UP bnd       x185           269043
  LO bnd       x186                0
- UP bnd       x186               10
+ UP bnd       x186           269043
  LO bnd       x187                0
- UP bnd       x187               10
+ UP bnd       x187           269043
  LO bnd       x188                0
- UP bnd       x188               10
+ UP bnd       x188           269043
  LO bnd       x189                0
- UP bnd       x189               10
+ UP bnd       x189             1000
  LO bnd       x190                0
- UP bnd       x190               10
+ UP bnd       x190           269043
  LO bnd       x191                0
- UP bnd       x191               10
+ UP bnd       x191             1000
  LO bnd       x192                0
- UP bnd       x192               10
+ UP bnd       x192           269043
  LO bnd       x193                0
- UP bnd       x193               10
+ UP bnd       x193             1000
  LO bnd       x194                0
- UP bnd       x194               10
+ UP bnd       x194             1000
  LO bnd       x195                0
- UP bnd       x195               10
+ UP bnd       x195             1000
  LO bnd       x196                0
- UP bnd       x196               10
+ UP bnd       x196           269043
  LO bnd       x197                0
- UP bnd       x197               10
+ UP bnd       x197           269043
  LO bnd       x198                0
- UP bnd       x198               10
+ UP bnd       x198             1000
  LO bnd       x199                0
- UP bnd       x199               10
+ UP bnd       x199           269043
  LO bnd       x200                0
- UP bnd       x200               10
+ UP bnd       x200           269043
  LO bnd       x201                0
- UP bnd       x201               10
+ UP bnd       x201             1000
  LO bnd       x202                0
- UP bnd       x202               10
+ UP bnd       x202           269043
  LO bnd       x203                0
- UP bnd       x203               10
+ UP bnd       x203             1000
  LO bnd       x204                0
- UP bnd       x204               10
+ UP bnd       x204             1000
  LO bnd       x205                0
- UP bnd       x205               10
+ UP bnd       x205             1000
  LO bnd       x206                0
- UP bnd       x206               10
+ UP bnd       x206             1000
  LO bnd       x207                0
- UP bnd       x207               10
+ UP bnd       x207             1000
  LO bnd       x208                0
- UP bnd       x208               10
+ UP bnd       x208             1000
  LO bnd       x209                0
- UP bnd       x209               10
+ UP bnd       x209             1000
  LO bnd       x210                0
- UP bnd       x210               10
+ UP bnd       x210           269043
  LO bnd       x211                0
- UP bnd       x211               10
+ UP bnd       x211             1000
  LO bnd       x212                0
- UP bnd       x212               10
+ UP bnd       x212             1000
  LO bnd       x213                0
- UP bnd       x213               10
+ UP bnd       x213             1000
  LO bnd       x214                0
- UP bnd       x214               10
+ UP bnd       x214             1000
  LO bnd       x215                0
- UP bnd       x215               10
+ UP bnd       x215             1000
  LO bnd       x216                0
- UP bnd       x216               10
+ UP bnd       x216             1000
  LO bnd       x217                0
- UP bnd       x217               10
+ UP bnd       x217           269043
  LO bnd       x218                0
- UP bnd       x218               10
+ UP bnd       x218             1000
  LO bnd       x219                0
- UP bnd       x219               10
+ UP bnd       x219             1000
  LO bnd       x220                0
- UP bnd       x220               10
+ UP bnd       x220             1000
  LO bnd       x221                0
- UP bnd       x221               10
+ UP bnd       x221             1000
  LO bnd       x222                0
- UP bnd       x222               10
+ UP bnd       x222             1000
  LO bnd       x223                0
- UP bnd       x223               10
+ UP bnd       x223             1000
  LO bnd       x224                0
- UP bnd       x224               10
+ UP bnd       x224           269043
  LO bnd       x225                0
- UP bnd       x225               10
+ UP bnd       x225             1000
  LO bnd       x226                0
- UP bnd       x226               10
+ UP bnd       x226             1000
  LO bnd       x227                0
- UP bnd       x227               10
+ UP bnd       x227             1000
  LO bnd       x228                0
- UP bnd       x228               10
+ UP bnd       x228             1000
  LO bnd       x229                0
- UP bnd       x229               10
+ UP bnd       x229             1000
  LO bnd       x230                0
- UP bnd       x230               10
+ UP bnd       x230             1000
  LO bnd       x231                0
- UP bnd       x231               10
+ UP bnd       x231           269043
  LO bnd       x232                0
- UP bnd       x232               10
+ UP bnd       x232           269043
  LO bnd       x233                0
- UP bnd       x233               10
+ UP bnd       x233           269043
  LO bnd       x234                0
- UP bnd       x234               10
+ UP bnd       x234           269043
  LO bnd       x235                0
- UP bnd       x235               10
+ UP bnd       x235             1000
  LO bnd       x236                0
- UP bnd       x236               10
+ UP bnd       x236             1000
  LO bnd       x237                0
- UP bnd       x237               10
+ UP bnd       x237             1000
  LO bnd       x238                0
- UP bnd       x238               10
+ UP bnd       x238             1000
  LO bnd       x239                0
- UP bnd       x239               10
+ UP bnd       x239             1000
  LO bnd       x240                0
- UP bnd       x240               10
+ UP bnd       x240             1000
  LO bnd       x241                0
- UP bnd       x241               10
+ UP bnd       x241             1000
  LO bnd       x242                0
- UP bnd       x242               10
+ UP bnd       x242             1000
  LO bnd       x243                0
- UP bnd       x243               10
+ UP bnd       x243             1000
  LO bnd       x244                0
- UP bnd       x244               10
+ UP bnd       x244             1000
  LO bnd       x245                0
- UP bnd       x245               10
+ UP bnd       x245             1000
  LO bnd       x246                0
- UP bnd       x246               10
+ UP bnd       x246             1000
  LO bnd       x247                0
- UP bnd       x247               10
+ UP bnd       x247             1000
  LO bnd       x248                0
- UP bnd       x248               10
+ UP bnd       x248             1000
  LO bnd       x249                0
- UP bnd       x249               10
+ UP bnd       x249             1000
  LO bnd       x250                0
- UP bnd       x250               10
+ UP bnd       x250             1000
  LO bnd       x251                0
- UP bnd       x251               10
+ UP bnd       x251             1000
  LO bnd       x252                0
- UP bnd       x252               10
+ UP bnd       x252             1000
  LO bnd       x253                0
- UP bnd       x253               10
+ UP bnd       x253           269043
  LO bnd       x254                0
- UP bnd       x254               10
+ UP bnd       x254             1000
  LO bnd       x255                0
- UP bnd       x255               10
+ UP bnd       x255             1000
  LO bnd       x256                0
- UP bnd       x256               10
+ UP bnd       x256             1000
  LO bnd       x257                0
- UP bnd       x257               10
+ UP bnd       x257             1000
  LO bnd       x258                0
- UP bnd       x258               10
+ UP bnd       x258           269043
  LO bnd       x259                0
- UP bnd       x259               10
+ UP bnd       x259             1000
  LO bnd       x260                0
- UP bnd       x260               10
+ UP bnd       x260           269043
  LO bnd       x261                0
- UP bnd       x261               10
+ UP bnd       x261             1000
  LO bnd       x262                0
- UP bnd       x262               10
+ UP bnd       x262             1000
  LO bnd       x263                0
- UP bnd       x263               10
+ UP bnd       x263             1000
  LO bnd       x264                0
- UP bnd       x264               10
+ UP bnd       x264             1000
  LO bnd       x265                0
- UP bnd       x265               10
+ UP bnd       x265             1000
  LO bnd       x266                0
- UP bnd       x266               10
+ UP bnd       x266           269043
  LO bnd       x267                0
- UP bnd       x267               10
+ UP bnd       x267             1000
  LO bnd       x268                0
- UP bnd       x268               10
+ UP bnd       x268             1000
  LO bnd       x269                0
- UP bnd       x269               10
+ UP bnd       x269             1000
  LO bnd       x270                0
- UP bnd       x270               10
+ UP bnd       x270             1000
  LO bnd       x271                0
- UP bnd       x271               10
+ UP bnd       x271             1000
  LO bnd       x272                0
- UP bnd       x272               10
+ UP bnd       x272           269043
  LO bnd       x273                0
- UP bnd       x273               10
+ UP bnd       x273             1000
  LO bnd       x274                0
- UP bnd       x274               10
+ UP bnd       x274             1000
  LO bnd       x275                0
- UP bnd       x275               10
+ UP bnd       x275             1000
  LO bnd       x276                0
- UP bnd       x276               10
+ UP bnd       x276             1000
  LO bnd       x277                0
- UP bnd       x277               10
+ UP bnd       x277             1000
  LO bnd       x278                0
- UP bnd       x278               10
+ UP bnd       x278             1000
  LO bnd       x279                0
- UP bnd       x279               10
+ UP bnd       x279           269043
  LO bnd       x280                0
- UP bnd       x280               10
+ UP bnd       x280             1000
  LO bnd       x281                0
- UP bnd       x281               10
+ UP bnd       x281             1000
  LO bnd       x282                0
- UP bnd       x282               10
+ UP bnd       x282             1000
  LO bnd       x283                0
- UP bnd       x283               10
+ UP bnd       x283             1000
  LO bnd       x284                0
- UP bnd       x284               10
+ UP bnd       x284           269043
  LO bnd       x285                0
- UP bnd       x285               10
+ UP bnd       x285           269043
  LO bnd       x286                0
- UP bnd       x286               10
+ UP bnd       x286           269043
  LO bnd       x287                0
- UP bnd       x287               10
+ UP bnd       x287           269043
  LO bnd       x288                0
- UP bnd       x288               10
+ UP bnd       x288           269043
  LO bnd       x289                0
- UP bnd       x289               10
+ UP bnd       x289             1000
  LO bnd       x290                0
- UP bnd       x290               10
+ UP bnd       x290             1000
  LO bnd       x291                0
- UP bnd       x291               10
+ UP bnd       x291           269043
  LO bnd       x292                0
- UP bnd       x292               10
+ UP bnd       x292           269043
  LO bnd       x293                0
- UP bnd       x293               10
+ UP bnd       x293             1000
  LO bnd       x294                0
- UP bnd       x294               10
+ UP bnd       x294             1000
  LO bnd       x295                0
- UP bnd       x295               10
+ UP bnd       x295           269043
  LO bnd       x296                0
- UP bnd       x296               10
+ UP bnd       x296           269043
  LO bnd       x297                0
- UP bnd       x297               10
+ UP bnd       x297           269043
  LO bnd       x298                0
- UP bnd       x298               10
+ UP bnd       x298           269043
  LO bnd       x299                0
- UP bnd       x299               10
+ UP bnd       x299             1000
  LO bnd       x300                0
- UP bnd       x300               10
+ UP bnd       x300             1000
  LO bnd       x301                0
- UP bnd       x301               10
+ UP bnd       x301             1000
  LO bnd       x302                0
- UP bnd       x302               10
+ UP bnd       x302             1000
  LO bnd       x303                0
- UP bnd       x303               10
+ UP bnd       x303             1000
  LO bnd       x304                0
- UP bnd       x304               10
+ UP bnd       x304           269043
  LO bnd       x305                0
- UP bnd       x305               10
+ UP bnd       x305             1000
  LO bnd       x306                0
- UP bnd       x306               10
+ UP bnd       x306             1000
  LO bnd       x307                0
- UP bnd       x307               10
+ UP bnd       x307             1000
  LO bnd       x308                0
- UP bnd       x308               10
+ UP bnd       x308             1000
  LO bnd       x309                0
- UP bnd       x309               10
+ UP bnd       x309             1000
  LO bnd       x310                0
- UP bnd       x310               10
+ UP bnd       x310             1000
  LO bnd       x311                0
- UP bnd       x311               10
+ UP bnd       x311             1000
  LO bnd       x312                0
- UP bnd       x312               10
+ UP bnd       x312           269043
  LO bnd       x313                0
- UP bnd       x313               10
+ UP bnd       x313             1000
  LO bnd       x314                0
- UP bnd       x314               10
+ UP bnd       x314             1000
  LO bnd       x315                0
- UP bnd       x315               10
+ UP bnd       x315             1000
  LO bnd       x316                0
- UP bnd       x316               10
+ UP bnd       x316             1000
  LO bnd       x317                0
- UP bnd       x317               10
+ UP bnd       x317             1000
  LO bnd       x318                0
- UP bnd       x318               10
+ UP bnd       x318             1000
  LO bnd       x319                0
- UP bnd       x319               10
+ UP bnd       x319           269043
  LO bnd       x320                0
- UP bnd       x320               10
+ UP bnd       x320             1000
  LO bnd       x321                0
- UP bnd       x321               10
+ UP bnd       x321             1000
  LO bnd       x322                0
- UP bnd       x322               10
+ UP bnd       x322             1000
  LO bnd       x323                0
- UP bnd       x323               10
+ UP bnd       x323             1000
  LO bnd       x324                0
- UP bnd       x324               10
+ UP bnd       x324           269043
  LO bnd       x325                0
- UP bnd       x325               10
+ UP bnd       x325           269043
  LO bnd       x326                0
- UP bnd       x326               10
+ UP bnd       x326           269043
  LO bnd       x327                0
- UP bnd       x327               10
+ UP bnd       x327           269043
  LO bnd       x328                0
- UP bnd       x328               10
+ UP bnd       x328             1000
  LO bnd       x329                0
- UP bnd       x329               10
+ UP bnd       x329           269043
  LO bnd       x330                0
- UP bnd       x330               10
+ UP bnd       x330             1000
  LO bnd       x331                0
- UP bnd       x331               10
+ UP bnd       x331             1000
  LO bnd       x332                0
- UP bnd       x332               10
+ UP bnd       x332           269043
  LO bnd       x333                0
- UP bnd       x333               10
+ UP bnd       x333             1000
  LO bnd       x334                0
- UP bnd       x334               10
+ UP bnd       x334             1000
  LO bnd       x335                0
- UP bnd       x335               10
+ UP bnd       x335             1000
  LO bnd       x336                0
- UP bnd       x336               10
+ UP bnd       x336           269043
  LO bnd       x337                0
- UP bnd       x337               10
+ UP bnd       x337           269043
  LO bnd       x338                0
- UP bnd       x338               10
+ UP bnd       x338             1000
  LO bnd       x339                0
- UP bnd       x339               10
+ UP bnd       x339           269043
  LO bnd       x340                0
- UP bnd       x340               10
+ UP bnd       x340           269043
  LO bnd       x341                0
- UP bnd       x341               10
+ UP bnd       x341           269043
  LO bnd       x342                0
- UP bnd       x342               10
+ UP bnd       x342             1000
  LO bnd       x343                0
- UP bnd       x343               10
+ UP bnd       x343           269043
  LO bnd       x344                0
- UP bnd       x344               10
+ UP bnd       x344             1000
  LO bnd       x345                0
- UP bnd       x345               10
+ UP bnd       x345           269043
  LO bnd       x346                0
- UP bnd       x346               10
+ UP bnd       x346             1000
  LO bnd       x347                0
- UP bnd       x347               10
+ UP bnd       x347             1000
  LO bnd       x348                0
- UP bnd       x348               10
+ UP bnd       x348           269043
  LO bnd       x349                0
- UP bnd       x349               10
+ UP bnd       x349             1000
  LO bnd       x350                0
- UP bnd       x350               10
+ UP bnd       x350           269043
  LO bnd       x351                0
- UP bnd       x351               10
+ UP bnd       x351           269043
  LO bnd       x352                0
- UP bnd       x352               10
+ UP bnd       x352           269043
  LO bnd       x353                0
- UP bnd       x353               10
+ UP bnd       x353             1000
  LO bnd       x354                0
- UP bnd       x354               10
+ UP bnd       x354             1000
  LO bnd       x355                0
- UP bnd       x355               10
+ UP bnd       x355             1000
  LO bnd       x356                0
- UP bnd       x356               10
+ UP bnd       x356             1000
  LO bnd       x357                0
- UP bnd       x357               10
+ UP bnd       x357           269043
  LO bnd       x358                0
- UP bnd       x358               10
+ UP bnd       x358             1000
  LO bnd       x359                0
- UP bnd       x359               10
+ UP bnd       x359             1000
  LO bnd       x360                0
- UP bnd       x360               10
+ UP bnd       x360             1000
  LO bnd       x361                0
- UP bnd       x361               10
+ UP bnd       x361             1000
  LO bnd       x362                0
- UP bnd       x362               10
+ UP bnd       x362             1000
  LO bnd       x363                0
- UP bnd       x363               10
+ UP bnd       x363           269043
  LO bnd       x364                0
- UP bnd       x364               10
+ UP bnd       x364             1000
  LO bnd       x365                0
- UP bnd       x365               10
+ UP bnd       x365             1000
  LO bnd       x366                0
- UP bnd       x366               10
+ UP bnd       x366             1000
  LO bnd       x367                0
- UP bnd       x367               10
+ UP bnd       x367             1000
  LO bnd       x368                0
- UP bnd       x368               10
+ UP bnd       x368           269043
  LO bnd       x369                0
- UP bnd       x369               10
+ UP bnd       x369             1000
  LO bnd       x370                0
- UP bnd       x370               10
+ UP bnd       x370             1000
  LO bnd       x371                0
- UP bnd       x371               10
+ UP bnd       x371             1000
  LO bnd       x372                0
- UP bnd       x372               10
+ UP bnd       x372             1000
  LO bnd       x373                0
- UP bnd       x373               10
+ UP bnd       x373           269043
  LO bnd       x374                0
- UP bnd       x374               10
+ UP bnd       x374           269043
  LO bnd       x375                0
- UP bnd       x375               10
+ UP bnd       x375           269043
  LO bnd       x376                0
- UP bnd       x376               10
+ UP bnd       x376           269043
  LO bnd       x377                0
- UP bnd       x377               10
+ UP bnd       x377             1000
  LO bnd       x378                0
- UP bnd       x378               10
+ UP bnd       x378             1000
  LO bnd       x379                0
- UP bnd       x379               10
+ UP bnd       x379             1000
  LO bnd       x380                0
- UP bnd       x380               10
+ UP bnd       x380           269043
  LO bnd       x381                0
- UP bnd       x381               10
+ UP bnd       x381             1000
  LO bnd       x382                0
- UP bnd       x382               10
+ UP bnd       x382             1000
  LO bnd       x383                0
- UP bnd       x383               10
+ UP bnd       x383             1000
  LO bnd       x384                0
- UP bnd       x384               10
+ UP bnd       x384             1000
  LO bnd       x385                0
- UP bnd       x385               10
+ UP bnd       x385           269043
  LO bnd       x386                0
- UP bnd       x386               10
+ UP bnd       x386             1000
  LO bnd       x387                0
- UP bnd       x387               10
+ UP bnd       x387           269043
  LO bnd       x388                0
- UP bnd       x388               10
+ UP bnd       x388           269043
  LO bnd       x389                0
- UP bnd       x389               10
+ UP bnd       x389           269043
  LO bnd       x390                0
- UP bnd       x390               10
+ UP bnd       x390           269043
  LO bnd       x391                0
- UP bnd       x391               10
+ UP bnd       x391           269043
  LO bnd       x392                0
- UP bnd       x392               10
+ UP bnd       x392             1000
  LO bnd       x393                0
- UP bnd       x393               10
+ UP bnd       x393             1000
  LO bnd       x394                0
- UP bnd       x394               10
+ UP bnd       x394             1000
  LO bnd       x395                0
- UP bnd       x395               10
+ UP bnd       x395             1000
  LO bnd       x396                0
- UP bnd       x396               10
+ UP bnd       x396             1000
  LO bnd       x397                0
- UP bnd       x397               10
+ UP bnd       x397             1000
  LO bnd       x398                0
- UP bnd       x398               10
+ UP bnd       x398             1000
  LO bnd       x399                0
- UP bnd       x399               10
+ UP bnd       x399             1000
  LO bnd       x400                0
- UP bnd       x400               10
+ UP bnd       x400           269043
  LO bnd       x401                0
- UP bnd       x401               10
+ UP bnd       x401             1000
  LO bnd       x402                0
- UP bnd       x402               10
+ UP bnd       x402             1000
  LO bnd       x403                0
- UP bnd       x403               10
+ UP bnd       x403             1000
  LO bnd       x404                0
- UP bnd       x404               10
+ UP bnd       x404             1000
  LO bnd       x405                0
- UP bnd       x405               10
+ UP bnd       x405             1000
  LO bnd       x406                0
- UP bnd       x406               10
+ UP bnd       x406             1000
  LO bnd       x407                0
- UP bnd       x407               10
+ UP bnd       x407             1000
  LO bnd       x408                0
- UP bnd       x408               10
+ UP bnd       x408             1000
  LO bnd       x409                0
- UP bnd       x409               10
+ UP bnd       x409           269043
  LO bnd       x410                0
- UP bnd       x410               10
+ UP bnd       x410             1000
  LO bnd       x411                0
- UP bnd       x411               10
+ UP bnd       x411             1000
  LO bnd       x412                0
- UP bnd       x412               10
+ UP bnd       x412             1000
  LO bnd       x413                0
- UP bnd       x413               10
+ UP bnd       x413             1000
  LO bnd       x414                0
- UP bnd       x414               10
+ UP bnd       x414             1000
  LO bnd       x415                0
- UP bnd       x415               10
+ UP bnd       x415             1000
  LO bnd       x416                0
- UP bnd       x416               10
+ UP bnd       x416             1000
  LO bnd       x417                0
- UP bnd       x417               10
+ UP bnd       x417             1000
  LO bnd       x418                0
- UP bnd       x418               10
+ UP bnd       x418           269043
  LO bnd       x419                0
- UP bnd       x419               10
+ UP bnd       x419             1000
  LO bnd       x420                0
- UP bnd       x420               10
+ UP bnd       x420             1000
  LO bnd       x421                0
- UP bnd       x421               10
+ UP bnd       x421             1000
  LO bnd       x422                0
- UP bnd       x422               10
+ UP bnd       x422             1000
  LO bnd       x423                0
- UP bnd       x423               10
+ UP bnd       x423             1000
  LO bnd       x424                0
- UP bnd       x424               10
+ UP bnd       x424             1000
  LO bnd       x425                0
- UP bnd       x425               10
+ UP bnd       x425             1000
  LO bnd       x426                0
- UP bnd       x426               10
+ UP bnd       x426           269043
  LO bnd       x427                0
- UP bnd       x427               10
+ UP bnd       x427             1000
  LO bnd       x428                0
- UP bnd       x428               10
+ UP bnd       x428             1000
  LO bnd       x429                0
- UP bnd       x429               10
+ UP bnd       x429             1000
  LO bnd       x430                0
- UP bnd       x430               10
+ UP bnd       x430             1000
  LO bnd       x431                0
- UP bnd       x431               10
+ UP bnd       x431             1000
  LO bnd       x432                0
- UP bnd       x432               10
+ UP bnd       x432             1000
  LO bnd       x433                0
- UP bnd       x433               10
+ UP bnd       x433             1000
  LO bnd       x434                0
- UP bnd       x434               10
+ UP bnd       x434             1000
  LO bnd       x435                0
- UP bnd       x435               10
+ UP bnd       x435           269043
  LO bnd       x436                0
- UP bnd       x436               10
+ UP bnd       x436             1000
  LO bnd       x437                0
- UP bnd       x437               10
+ UP bnd       x437             1000
  LO bnd       x438                0
- UP bnd       x438               10
+ UP bnd       x438             1000
  LO bnd       x439                0
- UP bnd       x439               10
+ UP bnd       x439             1000
  LO bnd       x440                0
- UP bnd       x440               10
+ UP bnd       x440             1000
  LO bnd       x441                0
- UP bnd       x441               10
+ UP bnd       x441             1000
  LO bnd       x442                0
- UP bnd       x442               10
+ UP bnd       x442             1000
  LO bnd       x443                0
- UP bnd       x443               10
+ UP bnd       x443           269043
  LO bnd       x444                0
- UP bnd       x444               10
+ UP bnd       x444           269043
  LO bnd       x445                0
- UP bnd       x445               10
+ UP bnd       x445           269043
  LO bnd       x446                0
- UP bnd       x446               10
+ UP bnd       x446           269043
  LO bnd       x447                0
- UP bnd       x447               10
+ UP bnd       x447           269043
  LO bnd       x448                0
- UP bnd       x448               10
+ UP bnd       x448           269043
  LO bnd       x449                0
- UP bnd       x449               10
+ UP bnd       x449             1000
  LO bnd       x450                0
- UP bnd       x450               10
+ UP bnd       x450           269043
  LO bnd       x451                0
- UP bnd       x451               10
+ UP bnd       x451             1000
  LO bnd       x452                0
- UP bnd       x452               10
+ UP bnd       x452           269043
  LO bnd       x453                0
- UP bnd       x453               10
+ UP bnd       x453             1000
  LO bnd       x454                0
- UP bnd       x454               10
+ UP bnd       x454             1000
  LO bnd       x455                0
- UP bnd       x455               10
+ UP bnd       x455             1000
  LO bnd       x456                0
- UP bnd       x456               10
+ UP bnd       x456           269043
  LO bnd       x457                0
- UP bnd       x457               10
+ UP bnd       x457           269043
  LO bnd       x458                0
- UP bnd       x458               10
+ UP bnd       x458             1000
  LO bnd       x459                0
- UP bnd       x459               10
+ UP bnd       x459           269043
  LO bnd       x460                0
- UP bnd       x460               10
+ UP bnd       x460           269043
  LO bnd       x461                0
- UP bnd       x461               10
+ UP bnd       x461             1000
  LO bnd       x462                0
- UP bnd       x462               10
+ UP bnd       x462           269043
  LO bnd       x463                0
- UP bnd       x463               10
+ UP bnd       x463             1000
  LO bnd       x464                0
- UP bnd       x464               10
+ UP bnd       x464             1000
  LO bnd       x465                0
- UP bnd       x465               10
+ UP bnd       x465             1000
  LO bnd       x466                0
- UP bnd       x466               10
+ UP bnd       x466             1000
  LO bnd       x467                0
- UP bnd       x467               10
+ UP bnd       x467             1000
  LO bnd       x468                0
- UP bnd       x468               10
+ UP bnd       x468             1000
  LO bnd       x469                0
- UP bnd       x469               10
+ UP bnd       x469             1000
  LO bnd       x470                0
- UP bnd       x470               10
+ UP bnd       x470           269043
  LO bnd       x471                0
- UP bnd       x471               10
+ UP bnd       x471             1000
  LO bnd       x472                0
- UP bnd       x472               10
+ UP bnd       x472             1000
  LO bnd       x473                0
- UP bnd       x473               10
+ UP bnd       x473             1000
  LO bnd       x474                0
- UP bnd       x474               10
+ UP bnd       x474             1000
  LO bnd       x475                0
- UP bnd       x475               10
+ UP bnd       x475             1000
  LO bnd       x476                0
- UP bnd       x476               10
+ UP bnd       x476             1000
  LO bnd       x477                0
- UP bnd       x477               10
+ UP bnd       x477           269043
  LO bnd       x478                0
- UP bnd       x478               10
+ UP bnd       x478             1000
  LO bnd       x479                0
- UP bnd       x479               10
+ UP bnd       x479             1000
  LO bnd       x480                0
- UP bnd       x480               10
+ UP bnd       x480             1000
  LO bnd       x481                0
- UP bnd       x481               10
+ UP bnd       x481             1000
  LO bnd       x482                0
- UP bnd       x482               10
+ UP bnd       x482             1000
  LO bnd       x483                0
- UP bnd       x483               10
+ UP bnd       x483             1000
  LO bnd       x484                0
- UP bnd       x484               10
+ UP bnd       x484           269043
  LO bnd       x485                0
- UP bnd       x485               10
+ UP bnd       x485             1000
  LO bnd       x486                0
- UP bnd       x486               10
+ UP bnd       x486             1000
  LO bnd       x487                0
- UP bnd       x487               10
+ UP bnd       x487             1000
  LO bnd       x488                0
- UP bnd       x488               10
+ UP bnd       x488             1000
  LO bnd       x489                0
- UP bnd       x489               10
+ UP bnd       x489             1000
  LO bnd       x490                0
- UP bnd       x490               10
+ UP bnd       x490             1000
  LO bnd       x491                0
- UP bnd       x491               10
+ UP bnd       x491           269043
  LO bnd       x492                0
- UP bnd       x492               10
+ UP bnd       x492           269043
  LO bnd       x493                0
- UP bnd       x493               10
+ UP bnd       x493           269043
  LO bnd       x494                0
- UP bnd       x494               10
+ UP bnd       x494           269043
  LO bnd       x495                0
- UP bnd       x495               10
+ UP bnd       x495             1000
  LO bnd       x496                0
- UP bnd       x496               10
+ UP bnd       x496             1000
  LO bnd       x497                0
- UP bnd       x497               10
+ UP bnd       x497             1000
  LO bnd       x498                0
- UP bnd       x498               10
+ UP bnd       x498             1000
  LO bnd       x499                0
- UP bnd       x499               10
+ UP bnd       x499             1000
  LO bnd       x500                0
- UP bnd       x500               10
+ UP bnd       x500             1000
  LO bnd       x501                0
- UP bnd       x501               10
+ UP bnd       x501             1000
  LO bnd       x502                0
- UP bnd       x502               10
+ UP bnd       x502             1000
  LO bnd       x503                0
- UP bnd       x503               10
+ UP bnd       x503             1000
  LO bnd       x504                0
- UP bnd       x504               10
+ UP bnd       x504             1000
  LO bnd       x505                0
- UP bnd       x505               10
+ UP bnd       x505             1000
  LO bnd       x506                0
- UP bnd       x506               10
+ UP bnd       x506             1000
  LO bnd       x507                0
- UP bnd       x507               10
+ UP bnd       x507             1000
  LO bnd       x508                0
- UP bnd       x508               10
+ UP bnd       x508             1000
  LO bnd       x509                0
- UP bnd       x509               10
+ UP bnd       x509             1000
  LO bnd       x510                0
- UP bnd       x510               10
+ UP bnd       x510             1000
  LO bnd       x511                0
- UP bnd       x511               10
+ UP bnd       x511             1000
  LO bnd       x512                0
- UP bnd       x512               10
+ UP bnd       x512             1000
  LO bnd       x513                0
- UP bnd       x513               10
+ UP bnd       x513           269043
  LO bnd       x514                0
- UP bnd       x514               10
+ UP bnd       x514             1000
  LO bnd       x515                0
- UP bnd       x515               10
+ UP bnd       x515             1000
  LO bnd       x516                0
- UP bnd       x516               10
+ UP bnd       x516             1000
  LO bnd       x517                0
- UP bnd       x517               10
+ UP bnd       x517             1000
  LO bnd       x518                0
- UP bnd       x518               10
+ UP bnd       x518           269043
  LO bnd       x519                0
- UP bnd       x519               10
+ UP bnd       x519             1000
 ENDATA
