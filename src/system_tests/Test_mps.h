@@ -301,7 +301,7 @@ public:
 
     }
 
-
+    /*
     void test_gte_mod1_dataset() {
 
         std::string dataset_path = RESOURCES_DIR "/mps/gte_mod1_dataset_mps";
@@ -338,7 +338,9 @@ public:
         }
 
     }
+    */
 
+    /*
     void test_gte_mod2_dataset() {
 
         std::string dataset_path = RESOURCES_DIR "/mps/gte_mod2_dataset_mps";
@@ -375,7 +377,9 @@ public:
         }
 
     }
+    */
 
+    /*
     void test_gte_mod3_dataset() {
 
         std::string dataset_path = RESOURCES_DIR "/mps/gte_mod3_dataset_mps";
@@ -412,7 +416,7 @@ public:
         }
 
     }
-
+    */
 };
 
 //
