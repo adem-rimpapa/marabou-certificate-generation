@@ -171,11 +171,9 @@ bool Engine::solve( unsigned timeoutInSeconds, std::string filename )
 
     // ----- Certificate Generation -----
 
-    // -- TODO remove --
 
     std::cerr << "filename: " << "\"" << filename << "\"" << "\n";
 
-    // -- TODO remove --
 
 
     std::ofstream out_file;
@@ -186,7 +184,6 @@ bool Engine::solve( unsigned timeoutInSeconds, std::string filename )
 
     if (!out_file) {
         std::cerr << "Error occurred while opening file.\n";
-        // TODO what to do here? (is returning false correct?)
         // return false;
     } else {
         std::cerr << "File opened successfully.\n";
@@ -238,8 +235,6 @@ bool Engine::solve( unsigned timeoutInSeconds, std::string filename )
 
         _tableau->getTableauRow(basic_index, &row);
 
-        // TODO check whether scalar is zero
-        // probably with FloatUtils::isZero, like in TableauRow::dump
 
         for (unsigned i = 0; i < num_non_basic; i++) {
             out_file << " (" << row._row[i]._var;
@@ -256,7 +251,6 @@ bool Engine::solve( unsigned timeoutInSeconds, std::string filename )
 
     // Variable data
 
-    // TODO remove index printing later
     out_file << std::boolalpha;
 
     for (unsigned variable = 0; variable < n; variable++) {
@@ -828,15 +822,6 @@ bool Engine::performSimplexStep(std::ofstream& out_file)
     unsigned leavingVarIndex = _tableau->getLeavingVariableIndex();
     unsigned enteringVarIndex = _tableau->getEnteringVariableIndex();
 
-    // TODO remove
-    /*
-    std::cerr << "Pivot variables: " << 
-                leavingVarIndex << " " <<
-                enteringVarIndex << "\n";
-    */
-    // TODO remove
-
-    // TODO is this check correct?
     if (leavingVarIndex == _tableau->getM()) {
         out_file << "Warning: performing fake pivot\n";
     } else {
