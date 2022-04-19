@@ -24,6 +24,7 @@
 #include <iostream>
 #include <experimental/filesystem>
 namespace fs = std::experimental::filesystem;
+#include "MarabouError.h"
 
 class MpsTestSuite : public CxxTest::TestSuite
 {
@@ -449,16 +450,26 @@ public:
             MpsParser mpsParser( in_file );
             mpsParser.generateQuery( inputQuery );
             Engine engine;
-            TS_ASSERT_THROWS_NOTHING ( engine.processInputQuery( inputQuery, preprocess ) );
-            TS_ASSERT_THROWS_NOTHING ( engine.solve(10, out_file) );
-            engine.extractSolution( inputQuery );
+
+            try {
+                bool result = engine.processInputQuery( inputQuery, false );
+                engine.solve(10, out_file);
+            } catch (const MarabouError &e) {
+                std::cerr << "Caught MarabouError\n";
+            } catch (...) {
+                std::cerr << "Caught other exception\n";
+            }
+
+            // TS_ASSERT_THROWS_NOTHING ( engine.processInputQuery( inputQuery, preprocess ) );
+            // TS_ASSERT_THROWS_NOTHING ( engine.solve(10, out_file) );
+            // engine.extractSolution( inputQuery );
 
         }
         */
     }
 
     void test_infeasible1_dataset() {
-
+        /*
         std::string dataset_path = RESOURCES_DIR "/mps/infeasible1_dataset_mps";
         std::string out_path = "/Users/ademrimpapa/Documents/MarabouCertificates/certificates_infeasible1_dataset/";
 
@@ -480,19 +491,96 @@ public:
 
             // Generate the certificate
 
+            std::cerr << out_file << ":\n";
+
             // Extract an input query
             InputQuery inputQuery;
 
             MpsParser mpsParser( in_file );
             mpsParser.generateQuery( inputQuery );
             Engine engine;
-            TS_ASSERT_THROWS_NOTHING ( engine.processInputQuery( inputQuery, preprocess ) );
-            TS_ASSERT_THROWS_NOTHING ( engine.solve(10, out_file) );
-            engine.extractSolution( inputQuery );
+
+            try {
+                engine.processInputQuery( inputQuery, false );
+            } catch (const MarabouError &e) {
+                std::cerr << "Caught MarabouError\n";
+            } catch (...) {
+                std::cerr << "Caught other exception\n";
+            }
+
+            
+            // if ( !engine.processInputQuery( inputQuery, false ) )
+            // {
+            //     // Got infeasible in preprocess stage
+            //     std::cerr << out_file << ":\n";
+            //     std::cerr << "Infeasible in preprocess stage\n";
+            // } else {
+            //     std::cerr << "test_infeasible1_dataset: solve function called\n";
+            //     bool result = engine.solve(10, out_file);
+            //     std::cerr << "result: ";
+            //     std::cerr << result << "\n";
+            //     // TS_ASSERT ( !result );
+            // }
+            
+
+            
+            // TS_ASSERT_THROWS_NOTHING ( engine.processInputQuery( inputQuery, preprocess ) );
+            // TS_ASSERT_THROWS_NOTHING ( engine.solve(10, out_file) );
+            // engine.extractSolution( inputQuery );
+
+        }
+        */
+    }
+
+    void test_infeasible2_dataset() {
+
+        std::string dataset_path = RESOURCES_DIR "/mps/infeasible2_dataset_mps";
+        std::string out_path = "/Users/ademrimpapa/Documents/MarabouCertificates/certificates_infeasible2_dataset/";
+
+        for (const auto& entry : fs::directory_iterator(dataset_path)) {
+            std::string in_file = entry.path().string();
+
+            std::cerr << in_file << "\n";
+
+            // Generate output file path from input path
+
+            std::size_t slash_idx = in_file.find_last_of("/"); 
+            std::string filename = in_file.substr(slash_idx + 1);
+
+            std::size_t dot_idx = filename.find_last_of(".");
+            std::string out_filename = 
+                "certificate_" + filename.substr(0, dot_idx) + ".txt";
+
+            std::string out_file = out_path + out_filename;
+
+            std::cerr << out_file << "\n";
+
+            // Generate the certificate
+
+            // Extract an input query
+            InputQuery inputQuery;
+
+            MpsParser mpsParser( in_file );
+            mpsParser.generateQuery( inputQuery );
+            Engine engine;
+
+            try {
+                engine.processInputQuery( inputQuery, preprocess );
+                engine.solve(10, out_file);
+            } catch (const MarabouError &e) {
+                std::cerr << "Caught MarabouError\n";
+            } catch (...) {
+                std::cerr << "Caught other exception\n";
+            }
+
+            // TS_ASSERT_THROWS_NOTHING ( engine.processInputQuery( inputQuery, preprocess ) );
+            // TS_ASSERT_THROWS_NOTHING ( engine.solve(10, out_file) );
+            // engine.extractSolution( inputQuery );
 
         }
 
     }
+
 
 };
 
