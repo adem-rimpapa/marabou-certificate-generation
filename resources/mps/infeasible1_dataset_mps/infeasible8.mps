@@ -1,6 +1,5 @@
 NAME      name
 ROWS
- N  obj
  E  e1
  E  e2
  G  e3
@@ -32,7 +31,6 @@ ROWS
  L  e29
  G  e30
 COLUMNS
-    x0        obj                  0
     x0        e1                 -10
     x0        e2                   3
     x0        e3                  -1
@@ -63,7 +61,6 @@ COLUMNS
     x0        e28                 -2
     x0        e29                 -8
     x0        e30                 -8
-    x1        obj                  0
     x1        e1                   8
     x1        e2                  -6
     x1        e3                   0
@@ -94,7 +91,6 @@ COLUMNS
     x1        e28                  0
     x1        e29                  8
     x1        e30                  8
-    x2        obj                  0
     x2        e1                  -9
     x2        e2                   9
     x2        e3                   9
@@ -125,7 +121,6 @@ COLUMNS
     x2        e28                  9
     x2        e29                 -2
     x2        e30                 -2
-    x3        obj                  0
     x3        e1                   2
     x3        e2                   9
     x3        e3                  -8
@@ -156,7 +151,6 @@ COLUMNS
     x3        e28                  7
     x3        e29                  7
     x3        e30                  7
-    x4        obj                  0
     x4        e1                   3
     x4        e2                  -5
     x4        e3                  -4
@@ -187,7 +181,6 @@ COLUMNS
     x4        e28                  6
     x4        e29                  1
     x4        e30                  1
-    x5        obj                  0
     x5        e1                   6
     x5        e2                   0
     x5        e3                  -9
@@ -218,7 +211,6 @@ COLUMNS
     x5        e28                 10
     x5        e29                 -6
     x5        e30                 -6
-    x6        obj                  0
     x6        e1                   1
     x6        e2                  -5
     x6        e3                  10
@@ -249,7 +241,6 @@ COLUMNS
     x6        e28                 -2
     x6        e29                 -9
     x6        e30                 -9
-    x7        obj                  0
     x7        e1                  -3
     x7        e2                 -10
     x7        e3                   2
@@ -280,7 +271,6 @@ COLUMNS
     x7        e28                 -7
     x7        e29                -10
     x7        e30                -10
-    x8        obj                  0
     x8        e1                  -3
     x8        e2                   0
     x8        e3                  -2
@@ -311,7 +301,6 @@ COLUMNS
     x8        e28                  7
     x8        e29                 -6
     x8        e30                 -6
-    x9        obj                  0
     x9        e1                  -5
     x9        e2                  -6
     x9        e3                   6
@@ -342,7 +331,6 @@ COLUMNS
     x9        e28                  7
     x9        e29                  2
     x9        e30                  2
-    x10       obj                  0
     x10       e1                  10
     x10       e2                  -7
     x10       e3                   0
@@ -373,7 +361,6 @@ COLUMNS
     x10       e28                 -9
     x10       e29                  1
     x10       e30                  1
-    x11       obj                  0
     x11       e1                  10
     x11       e2                   6
     x11       e3                  -3
@@ -404,7 +391,6 @@ COLUMNS
     x11       e28                -10
     x11       e29                -10
     x11       e30                -10
-    x12       obj                  0
     x12       e1                  -7
     x12       e2                   0
     x12       e3                   8
@@ -435,7 +421,6 @@ COLUMNS
     x12       e28                  0
     x12       e29                  1
     x12       e30                  1
-    x13       obj                  0
     x13       e1                  -7
     x13       e2                   9
     x13       e3                   0
@@ -466,7 +451,6 @@ COLUMNS
     x13       e28                  3
     x13       e29                  0
     x13       e30                  0
-    x14       obj                  0
     x14       e1                   7
     x14       e2                  -3
     x14       e3                  -2
@@ -497,7 +481,6 @@ COLUMNS
     x14       e28                  9
     x14       e29                  6
     x14       e30                  6
-    x15       obj                  0
     x15       e1                   9
     x15       e2                  -7
     x15       e3                  -8
@@ -528,7 +511,6 @@ COLUMNS
     x15       e28                  5
     x15       e29                  8
     x15       e30                  8
-    x16       obj                  0
     x16       e1                  -6
     x16       e2                   7
     x16       e3                   4
@@ -559,7 +541,6 @@ COLUMNS
     x16       e28                  0
     x16       e29                  8
     x16       e30                  8
-    x17       obj                  0
     x17       e1                  -1
     x17       e2                  -7
     x17       e3                  -6
@@ -590,7 +571,6 @@ COLUMNS
     x17       e28                  8
     x17       e29                  2
     x17       e30                  2
-    x18       obj                  0
     x18       e1                   1
     x18       e2                   5
     x18       e3                  -9
@@ -621,7 +601,6 @@ COLUMNS
     x18       e28                 -3
     x18       e29                  7
     x18       e30                  7
-    x19       obj                  0
     x19       e1                   5
     x19       e2                   6
     x19       e3                  -7
